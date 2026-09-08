@@ -1,0 +1,19 @@
+{
+  "stage": { "width": 2560, "height": 1440, "leftX": 700, "rightX": 1860 },
+  "characters": {
+    "witch": { "speaker": "魔女", "scale": 0.82, "y": 0 },
+    "clerk": { "speaker": "店员小姐", "scale": 0.92, "y": 0 },
+    "marian": { "speaker": "玛丽安", "scale": 1.10, "y": 100 },
+    "flower": { "speaker": "小花", "scale": 0.95, "y": 0 }
+  },
+  "locations": {
+    "road": { "cast": ["witch", "clerk", "marian"] },
+    "parking": { "cast": ["witch", "clerk"] },
+    "store": { "cast": ["witch", "clerk", "marian"] },
+    "cafe": { "cast": ["witch", "flower"] },
+    "camp": { "cast": ["witch", "clerk", "marian"] },
+    "station": { "cast": ["witch", "clerk", "marian"] },
+    "room": { "cast": ["witch", "clerk", "marian"] },
+    "stars": { "cast": ["witch", "marian"] }
+  }
+}

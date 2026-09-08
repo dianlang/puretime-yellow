@@ -23,17 +23,15 @@ assign('保安团', [342,343,344]);
 assign('长老', [367]);
 assign('电台', [133,134,137,138,139,159,164,166]);
 
-// Static PNG figures currently available in the project.
-const figureBySpeaker = new Map([
-  ['魔女', 'witch'],
-  ['店员小姐', 'clerk'],
-  ['酒保小姐', 'clerk'],
-  ['玛丽安', 'marian'],
-  ['小花', 'flower']
-]);
+const presentation = JSON.parse(fs.readFileSync(path.join(root,'game/presentation.json'),'utf8'));
+// 酒保小姐与店员小姐是不同角色；没有立绘的说话人保留画外音。
+const figureBySpeaker = new Map(Object.entries(presentation.characters).map(([id,p])=>[p.speaker,id]));
+let shotContext;
 
 function getFigureAt(index) {
-  return figureBySpeaker.get(speakers.get(index) || '');
+  if (index < shotContext.from || index > shotContext.to) return undefined;
+  const figure = figureBySpeaker.get(speakers.get(index) || '');
+  return shotContext.cast.includes(figure) ? figure : undefined;
 }
 
 // Score nearby dialogue partners. Existing on-screen partners get a bias so a single
@@ -136,10 +134,10 @@ function transitionPair(lines, currentLayout, desiredPair) {
   const desired = pairLayout(desiredPair);
   if (sameLayout(currentLayout, desired)) return desired;
 
-  if (currentLayout.left && currentLayout.left !== desired.left) {
+  if (currentLayout.left && !desired.left) {
     lines.push('changeFigure:none -left -exit=exit-to-left -exitDuration=260 -next;');
   }
-  if (currentLayout.right && currentLayout.right !== desired.right) {
+  if (currentLayout.right && !desired.right) {
     lines.push('changeFigure:none -right -exit=exit-to-right -exitDuration=260 -next;');
   }
   if (desired.left && currentLayout.left !== desired.left) {
@@ -199,10 +197,14 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
   const lines = [`; PureTime·黄 / ${chapter.title}`, `changeFigure:none -left -next;`, `changeFigure:none -right -next;`, `changeFigure:none -next;`, `changeBg:none -next;`, `intro:${chapter.title};`];
   let activeLayout = { left:null, right:null };
   let previousSpeaker = '';
+  let location = '';
 
   for (let i = chapter.from; i <= chapter.to; i++) {
     if (cues.has(i)) {
-      const set = sets[cues.get(i)];
+      location = cues.get(i);
+      const set = sets[location];
+      const nextCue = [...cues.keys()].find(n=>n>i) ?? paragraphs.length;
+      shotContext = { from:i, to:Math.min(nextCue-1,chapter.to), cast:presentation.locations[location].cast };
       lines.push(
         'changeFigure:none -left -next;',
         'changeFigure:none -right -next;',
@@ -220,7 +222,7 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
     const segments = paginate(paragraphs[i]);
     if (segments.join('') !== paragraphs[i]) throw new Error(`第 ${i} 段有内容损失`);
     const speaker = speakers.get(i) || '';
-    const figure = figureBySpeaker.get(speaker);
+    const figure = getFigureAt(i);
 
     // Narration keeps the current pair. Dialogue may establish or change a two-person shot.
     if (figure) {
@@ -240,7 +242,7 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
     previousSpeaker = speaker;
 
     for (const segment of segments) lines.push(`${speaker}:${escape(segment)};`);
-    report.push({paragraph:i, scene:chapter.file, speaker, segments});
+    report.push({paragraph:i, scene:chapter.file, location, figures:layoutPair(activeLayout), speaker, segments});
   }
 
   if (chapterIndex < chapters.length - 1) lines.push(`changeScene:${chapters[chapterIndex+1].file};`);

@@ -2,6 +2,7 @@
 (() => {
   let knownTitle;
   let queued = false;
+  let focusBeforePortrait;
 
   function isTouchDevice() {
     return navigator.maxTouchPoints > 0 || matchMedia('(pointer:coarse)').matches;
@@ -42,7 +43,11 @@
     button.type = 'button';
     button.className = 'puretime-orientation-button';
     button.textContent = '尝试横屏全屏';
+    const status = document.createElement('p');
+    status.className = 'puretime-orientation-status';
+    status.setAttribute('aria-live','polite');
     button.addEventListener('click', async () => {
+      button.disabled = true;
       try {
         if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
           await document.documentElement.requestFullscreen();
@@ -58,9 +63,11 @@
         console.debug('Landscape lock was not available', error);
       }
       updateOrientationGate();
+      status.textContent = shouldGatePortrait() ? '请关闭手机的竖屏锁定，再将手机横过来。部分浏览器不支持自动切换。' : '';
+      button.disabled = false;
     });
 
-    card.append(mark, title, copy, button);
+    card.append(mark, title, copy, button, status);
     gate.append(card);
     document.body.append(gate);
     return gate;
@@ -69,9 +76,23 @@
   function updateOrientationGate() {
     const gate = ensureOrientationGate();
     const active = shouldGatePortrait();
+    const wasActive = !gate.hidden;
+    if(active && !wasActive) focusBeforePortrait=document.activeElement;
     document.body.classList.toggle('puretime-portrait', active);
     gate.hidden = !active;
     gate.setAttribute('aria-hidden', active ? 'false' : 'true');
+    for (const el of document.querySelectorAll('#root,.html-body__title-enter')) el.inert = active;
+    if (active) {
+      // Pinned WebGAL 4.6.4 marks active AUTO / FAST buttons with button_on.
+      // Pause playback while the stage is hidden; the player can restart it afterwards.
+      for(const id of ['Button_ControlPanel_auto','Button_ControlPanel_fast']) {
+        const control=document.getElementById(id);
+        if(control?.className.includes('_button_on_')) control.click();
+      }
+      if(!wasActive) gate.querySelector('button')?.focus({preventScroll:true});
+    } else if(wasActive && focusBeforePortrait?.isConnected) {
+      focusBeforePortrait.focus({preventScroll:true});
+    }
   }
 
   function enhanceTitle() {
@@ -144,5 +165,10 @@
   window.addEventListener('resize', updateOrientationGate, { passive: true });
   window.addEventListener('orientationchange', () => setTimeout(updateOrientationGate, 120));
   screen.orientation?.addEventListener?.('change', updateOrientationGate);
+  window.addEventListener('keydown', e => {
+    if(shouldGatePortrait() && !e.target.closest?.('#puretime-orientation-gate')) {
+      e.preventDefault(); e.stopImmediatePropagation();
+    }
+  },true);
   scheduleEnhance();
 })();

@@ -1,0 +1,5228 @@
+{
+  "paragraphs": 413,
+  "chapters": [
+    {
+      "file": "start.txt",
+      "title": "序章",
+      "from": 0,
+      "to": 24
+    },
+    {
+      "file": "01.txt",
+      "title": "第一节",
+      "from": 26,
+      "to": 105
+    },
+    {
+      "file": "02.txt",
+      "title": "第二节",
+      "from": 107,
+      "to": 204
+    },
+    {
+      "file": "03.txt",
+      "title": "第三节",
+      "from": 206,
+      "to": 320
+    },
+    {
+      "file": "04.txt",
+      "title": "第四节",
+      "from": 322,
+      "to": 380
+    },
+    {
+      "file": "05.txt",
+      "title": "第五节",
+      "from": 382,
+      "to": 412
+    }
+  ],
+  "dialogue": [
+    {
+      "paragraph": 0,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "奶奶常说，人生在世，有三样东西是经不起回忆的：灾难、死亡和爱。"
+      ]
+    },
+    {
+      "paragraph": 1,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "灾难是一场抗拒改变而无法醒来的梦魇；死亡是一个害怕失去而不愿给予的灵魂；而爱则是一把滴血的利刃、一团煎熬的欲火、一粒空心的种子，明明不会结果，",
+        "却总是显露出虚假的希望。"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "虚伪之月坠落后第111年，无始无终之地，黄昏。"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "视线所及尽是蔽日黄沙，狂风在无穷无尽的公路上呼啸，飞扬的尘土正一点点蚕食着地表所剩的微弱生机，时光流逝仿佛在这方秽土失去了意义，硕日静止在了天边，",
+        "徒给密布在大地上的路网，留下了一片永恒的昏暗暮光。"
+      ]
+    },
+    {
+      "paragraph": 4,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "自四腕上的镣铐被解开已经过去了不知道多少个钟头，曾经被其束缚之物仍在被遗弃之处纹丝未动。连串的奴隶们朝圣般绵延的长队已经彻底消失在了道路尽头，",
+        "53号公路上仅剩的，是一具衣不蔽体、被疾病缠绕、被日光曝晒、被秃鹫觊觎、被奴隶贩子认定价值已抵不上一程路费的少女的干瘦躯体。"
+      ]
+    },
+    {
+      "paragraph": 5,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "在这具躯体脏污、生疮且伤痕累累的脖子上，吊着一枚铜质的铭牌，固执地宣示着她微不足道的来历——46号休息站的“玛丽安”。"
+      ]
+    },
+    {
+      "paragraph": 6,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "正如一般的童话故事都会有的老套展开那样，半阖着双目，处在弥留之际的玛丽安在恍惚中，看到了自己唯一的家人的幻影——在自己年幼时便离开了46号休息站的奶奶。"
+      ]
+    },
+    {
+      "paragraph": 7,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "她是个不甚年长，有着一头盘起的白金色长发，健谈且说话不着边际的妇人，总是抱着一本厚厚的笔记，微笑着向自己讲述她年轻时四处旅行的故事。在她的故事里，",
+        "世界不被黄沙覆盖，公路也存在着的尽头，人们不曾蜗居于地下，那从岩缝里渗出的稀少的清水，居然会成群结队地在地表流淌，并汇集到道路的终点，",
+        "形成一片蔚蓝的大海。"
+      ]
+    },
+    {
+      "paragraph": 8,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "玛丽安见过那片大海，通过夹在奶奶笔记中的照片看见过，那是一片泛着白色波纹的碧蓝，托着几朵沉甸甸的乌云，从灰白的海滩一路延伸到天空的支点。"
+      ]
+    },
+    {
+      "paragraph": 9,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "奶奶常说，那是位于世界尽头的乐园，是这个世界的原本模样。"
+      ]
+    },
+    {
+      "paragraph": 10,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "玛丽安有着一头和奶奶相似的白金色长发，眼下正纠缠着被裹挟在破碎的尘土中，在她勉力才能撑开的双眼的缝隙里，那条无垠延伸的公路，自那看不到终点的尽头，",
+        "正席卷起一片飞沙，就和奶奶骑着摩托车离开46号休息站时，车轮碾过路面的情形一样。"
+      ]
+    },
+    {
+      "paragraph": 11,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "坐不住的将奶奶驱赶走的大人们将她称为“魔女”，而几年之后掌管了休息站的总是坐着的大人们又称她为“圣女”；奶奶留下的笔记被他们小心地供奉在了圣坛上，",
+        "而被奶奶抛下的自己却在某个清晨醒来之时，看不到了熟悉的地窖的影子，还因为缺少遮盖，在奴隶贩子的营地中感染上了风寒。"
+      ]
+    },
+    {
+      "paragraph": 12,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "一个健康的奴隶尚且不如药物更有价值，更何况还是一个染病的？"
+      ]
+    },
+    {
+      "paragraph": 13,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "货真价实，并非回忆的灾难和死亡接踵而来、相依为伴，而唯有亲人的爱独成遥远的回忆，难以企及。"
+      ]
+    },
+    {
+      "paragraph": 14,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "破开风尘的引擎轰鸣渐渐响起，支撑双眼的力量也被大地一点点剥离，伴随着尖锐的刹车声，独属于玛丽安的模糊成黑白两色的世界里，倏地树立起两个朦胧的身影，",
+        "发出了女孩子之间对话的声音。"
+      ]
+    },
+    {
+      "paragraph": 15,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“我说的吧，她还有呼吸……嗯，但是马上要没了。”"
+      ]
+    },
+    {
+      "paragraph": 16,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“哼……真是麻烦。”"
+      ]
+    },
+    {
+      "paragraph": 17,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“要把她搬到车上吗？”"
+      ]
+    },
+    {
+      "paragraph": 18,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那你自己把她搬上去……慢着……”"
+      ]
+    },
+    {
+      "paragraph": 19,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "其中一个身影蠕动着凑近了自己。"
+      ]
+    },
+    {
+      "paragraph": 20,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我有一句必须在这个时候才用得上的话要说……”"
+      ]
+    },
+    {
+      "paragraph": 21,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在最后的一刹那回光返照之中，玛丽安看到了一个奇装异服，戴着副蛤蟆镜的少女正走向自己。"
+      ]
+    },
+    {
+      "paragraph": 22,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“醒醒，武士……”"
+      ]
+    },
+    {
+      "paragraph": 23,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她蹲在了自己的身前，然后一手将墨镜摘下，露出一张远比自己还要稚嫩，却一板一眼地紧绷着的脸。"
+      ]
+    },
+    {
+      "paragraph": 24,
+      "scene": "start.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我们还要去把这个世界烧成灰呢。”"
+      ]
+    },
+    {
+      "paragraph": 26,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "故事依旧开始于悬挂在纯真时代店门上那一串风铃的脆响，端着定番的柠檬水走出店门的店员，在露天茶座里不见了两位熟客的身影，抖擞着耳朵，",
+        "四下寻找一番才在停车场的过道上，找到了那顶标志性的魔女帽和那一身熟悉的藏青色酒保服。"
+      ]
+    },
+    {
+      "paragraph": 27,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "只有四个车位的迷你停车场上，孤零零停放着唯一的一辆机动车，正是小花和叶子发现此地时推来的那台抛锚的军绿色挎斗摩托——虽然它刚出现在这里时是土黄色的。"
+      ]
+    },
+    {
+      "paragraph": 28,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [],
+      "speaker": "酒保小姐",
+      "segments": [
+        "“我以前也有这么一辆摩托，低排量、一体握把、定制工学椅背的车斗座位……”"
+      ]
+    },
+    {
+      "paragraph": 29,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "见多识广，两脚正跨在摩托上的酒保小姐回忆着往昔，却被站在身旁的魔女小姐回以了一个不耐烦的白眼。"
+      ]
+    },
+    {
+      "paragraph": 30,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我怎么从没见你骑过？”"
+      ]
+    },
+    {
+      "paragraph": 31,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "酒保小姐",
+      "segments": [
+        "“有人偷走了它，用它抵押了六个月的房钱，还用找零请我吃了顿路边摊。”"
+      ]
+    },
+    {
+      "paragraph": 32,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那你是怎么知道的这些的？”"
+      ]
+    },
+    {
+      "paragraph": 33,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "酒保小姐",
+      "segments": [
+        "“那个小偷亲口告诉我的，就在吃那顿路边摊的时候。”"
+      ]
+    },
+    {
+      "paragraph": 34,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女小姐的白眼逐渐失焦，变成了一种匪夷所思的诧异表情。"
+      ]
+    },
+    {
+      "paragraph": 35,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那后来呢？”"
+      ]
+    },
+    {
+      "paragraph": 36,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "酒保小姐",
+      "segments": [
+        "“我用折凳打断了他的胳膊，却又不得不因此照顾了他一个月，他的房东还为此免除了他那个月的房租……”"
+      ]
+    },
+    {
+      "paragraph": 37,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "因为谈论此事而倍感焦躁的酒保小姐从上衣口袋里掏出了一包烟，却只是在手里翻来覆去转了几圈，便又耸了耸肩，随手塞回了口袋里。"
+      ]
+    },
+    {
+      "paragraph": 38,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "酒保小姐",
+      "segments": [
+        "“你能修好这个吗？”"
+      ]
+    },
+    {
+      "paragraph": 39,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我从来不碰这种东西……”"
+      ]
+    },
+    {
+      "paragraph": 40,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女小姐坦率地摇了摇头。"
+      ]
+    },
+    {
+      "paragraph": 41,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“但我能让它变回原来的样子，只要知道它是什么时候坏的。”"
+      ]
+    },
+    {
+      "paragraph": 42,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "酒保小姐",
+      "segments": [
+        "“这个的话……”"
+      ]
+    },
+    {
+      "paragraph": 43,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "酒保小姐听罢弯下了腰，在车架的各处打量了一番，然后挥手示意魔女小姐看向了车架的左前方。"
+      ]
+    },
+    {
+      "paragraph": 44,
+      "scene": "01.txt",
+      "location": "parking",
+      "figures": [
+        "witch"
+      ],
+      "speaker": "酒保小姐",
+      "segments": [
+        "“只知道出厂日期可以吗？”"
+      ]
+    },
+    {
+      "paragraph": 45,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "虚伪之月坠落后第111年，无始无终之地，黄昏。"
+      ]
+    },
+    {
+      "paragraph": 46,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "奶奶曾说过：公路并非没有尽头，只是它距离我们太远，远到有限的岁月无法承载，只有超越了时间的恒心才能一睹终点的芳容。"
+      ]
+    },
+    {
+      "paragraph": 47,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "自玛丽安从死亡的边缘被拯救，已经过去了三日有余，自那之后，她便跟随着自己的救命恩人——魔女和她的随从店员小姐，在落日的公路上无尽地驰骋。"
+      ]
+    },
+    {
+      "paragraph": 48,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "在这漫无目的旅途中，通常是由店员小姐驾驶着那架承载着她们三人的挎斗摩托，她的个子很高，自称是一家露天咖啡厅的店员，尽管玛丽安不知道什么是露天咖啡厅，",
+        "但还是惊叹于店员小姐奇妙的外观——她的头顶上除了一直戴着一副风镜之外，还奇妙地生长着一对三角形的兽耳，活灵活现地不断运动着。"
+      ]
+    },
+    {
+      "paragraph": 49,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "和高大体型带来的第一印象相悖，店员小姐不论说话还是行事都像是个未谙世事的孩童，无忧无虑地迎着风沙前进，笑容满面地在营火旁烹饪食物，",
+        "从不过问这趟旅行的目的。"
+      ]
+    },
+    {
+      "paragraph": 50,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "而多半都坐在挎斗里的魔女则恰恰相反，总是臭着一张脸。她体型娇小，披着一头直抵脚踝的棉花般蓬松的长发，上面还终日顶着一个巨大的三角帽。在风沙不那么激烈时，",
+        "她也会用魔力在眼前漂浮起一本巴掌大的书籍阅读，书的标题从《公路月报半年刊》到《熵与实用半导体维修技术》无所不包，不挑食地翻阅着从路途中收集来的文献。"
+      ]
+    },
+    {
+      "paragraph": 51,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "在驻车休息时，她会扶着帽子站在高处，沉默地眺望着公路的远方，难得听到她发言都是在露营时对店员小姐做的料理评头论足，言语里尽是尖酸刻薄的抱怨，",
+        "却从来没引得对方生气过。"
+      ]
+    },
+    {
+      "paragraph": 52,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "被恰巧路过的两人救起，随着店员小姐的喂食和魔女小姐的治疗而身体日渐好转的玛丽安一直坐在驾驶席的后座上，沉默地跟随着她们进行着漫无止境的旅途，",
+        "直到终于无法再沉默下去："
+      ]
+    },
+    {
+      "paragraph": 53,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“请问，你们到底是……”"
+      ]
+    },
+    {
+      "paragraph": 54,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“我是露天咖啡厅Puretime唯一的店员，这位是多元宇宙之中最伟大的魔女，而它则是小花和叶子的伙伴——老伙计。”"
+      ]
+    },
+    {
+      "paragraph": 55,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "驾车的店员小姐自豪地拍了拍“老伙计”的油缸，让本就困惑不解的玛丽安徒增了更多烦恼。"
+      ]
+    },
+    {
+      "paragraph": 56,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“我的意思是，两位姐姐是从哪里来的呢？”"
+      ]
+    },
+    {
+      "paragraph": 57,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "不论从任何角度而言，这两位凭空出现的衣着怪异、姿态光鲜、性格天差地别的美少女对这片满是灰土的大地都太过邪门了。"
+      ]
+    },
+    {
+      "paragraph": 58,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我来自一个被叫做威斯特利姆的地区的西北方，远离陆地的一颗大树上，至于她嘛……我不在乎。”"
+      ]
+    },
+    {
+      "paragraph": 59,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "虽然用词精确了不少，但魔女小姐的回答却远比店员小姐的更加难以琢磨。"
+      ]
+    },
+    {
+      "paragraph": 60,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“魔女姐姐……是住在树上吗？”"
+      ]
+    },
+    {
+      "paragraph": 61,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“对，法师们过去都住在天空树上，没有魔法才能的废人们需要抬起头来才能仰望我们，为此他们管我们叫猴子，我们则叫他们死狗，把他们气得不轻。”"
+      ]
+    },
+    {
+      "paragraph": 62,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“为什么他们会更生气？”"
+      ]
+    },
+    {
+      "paragraph": 63,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你见过死掉的狗吗？”"
+      ]
+    },
+    {
+      "paragraph": 64,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“见过几次……”"
+      ]
+    },
+    {
+      "paragraph": 65,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安懵懂地点了点头——休息站里多少也是能看见一些动物的，尤数能从事护卫工作的狗们最多，当它们因为各种原因去世时，",
+        "负责看护它们的人们还会伤心地为他们下葬。"
+      ]
+    },
+    {
+      "paragraph": 66,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "对于没有实际和这些动物接触过，仅能在一些发霉的书卷上了解到相关信息的玛丽安而言，光是凭要先埋进土里再偷偷地挖出来才能吃这一点，",
+        "狗就与其他动物存在着显而易见的不同。"
+      ]
+    },
+    {
+      "paragraph": 67,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那猴子呢，包括活着的？”"
+      ]
+    },
+    {
+      "paragraph": 68,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“没有。”"
+      ]
+    },
+    {
+      "paragraph": 69,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安如实回答，她只在书上看到过关于猴子的描述。"
+      ]
+    },
+    {
+      "paragraph": 70,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“正是如此。”"
+      ]
+    },
+    {
+      "paragraph": 71,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“哦……哦，原来如此。”"
+      ]
+    },
+    {
+      "paragraph": 72,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安完全没理解魔女的意思，书上说了猴子是一种很聪明的动物，但书上也说了狗一种很聪明的动物，难道是因为猴子不能吃吗？"
+      ]
+    },
+    {
+      "paragraph": 73,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她满心疑惑，却不敢追问下去。"
+      ]
+    },
+    {
+      "paragraph": 74,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她发自内心地畏惧着这个外形上比自己还要娇小的魔女，一方面由于对方在自己眼前展露的种种神通，另一方面，",
+        "则出于这位魔女小姐一直所展现的如此猛烈的不友好感——那是穷极玛丽安短暂一生都未曾见识过，如仇恨这世界本身一般厌恶着眼中所视一切的，",
+        "一种毫无理由毫不遮掩对他人表露的恶意推定。"
+      ]
+    },
+    {
+      "paragraph": 75,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "和那个同样被称为魔女，却教导自己相信并热爱所有事物的奶奶正如交替的日月，只是这月亮居然能在暗夜中放射出这般强烈的光彩，竟使空无一物的天空都变得刺眼起来。"
+      ]
+    },
+    {
+      "paragraph": 76,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你不想知道这个世界是怎么变成现在这样子的吗？”"
+      ]
+    },
+    {
+      "paragraph": 77,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "那个明亮得令双目灼痛的魔女这么问她。"
+      ]
+    },
+    {
+      "paragraph": 78,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "惩戒人类的大洪水、夺走一切的狂风、还有圆环之神……那些被大人们讲述了一次又一次的神话到了嘴边，却又被玛丽安胆怯地给咽了回去。"
+      ]
+    },
+    {
+      "paragraph": 79,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“这世界是一筐鸡蛋中的一枚，创造了它们的蠢货一不小心让筐子落到了地上，然后……轰——！”"
+      ]
+    },
+    {
+      "paragraph": 80,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女的语气轻佻，在提到造物主时充满了不屑。"
+      ]
+    },
+    {
+      "paragraph": 81,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“对摔得轻一些的世界而言——也就是基本完好的那些鸡蛋，这场灾难或许只是发生了一场地震，爆发了一场罕见的流感；而对于足够倒霉，",
+        "摔得七零八落却又没能痛快消亡的世界而言，这场灾难则彻底改变了它们的模样：有的被海水淹没、有的太阳永远停在空中、有的时间开始不按顺序流转、",
+        "有的大地支离破碎，仅仅靠着没有来由的道路相连……”"
+      ]
+    },
+    {
+      "paragraph": 82,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她自言自语地望着公路出神，不经意地将话题延申到了完全无关的方向。"
+      ]
+    },
+    {
+      "paragraph": 83,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“再也没有人住在树上，也再没有人需要仰望……”"
+      ]
+    },
+    {
+      "paragraph": 84,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "又是些似有所指，却完全让人摸不着头脑的话。"
+      ]
+    },
+    {
+      "paragraph": 85,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“那魔女小姐为什么会出现在这个世界呢？”"
+      ]
+    },
+    {
+      "paragraph": 86,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安抛出了脑海中的最后一个疑问，或者说，她目前敢提出的最后一个问题。"
+      ]
+    },
+    {
+      "paragraph": 87,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“为了收集故事哦。”"
+      ]
+    },
+    {
+      "paragraph": 88,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "回答她的是店员小姐。"
+      ]
+    },
+    {
+      "paragraph": 89,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“魔女大人以前告诉过我，想要修复奇迹的话……就得收集故事……什么的？嗷哦！”"
+      ]
+    },
+    {
+      "paragraph": 90,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“是‘奇迹是被传颂的故事，想要达成修复世界的奇迹，就得收集等量的故事’。”"
+      ]
+    },
+    {
+      "paragraph": 91,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "冲着店员脑门毫不留情地扣了个爆栗，叉着手修正了她错误的口述。"
+      ]
+    },
+    {
+      "paragraph": 92,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“虽然各个世界互不相同，但终归是装在一个筐子里的鸡蛋，在不同世界之间穿梭收集故事的效率远比在同一个世界里看这些重复的内容要高。”"
+      ]
+    },
+    {
+      "paragraph": 93,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "收集故事吗……"
+      ]
+    },
+    {
+      "paragraph": 94,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安喃喃自语着，说出了让了不起的魔女小姐第一次露出惊讶表情的话来。"
+      ]
+    },
+    {
+      "paragraph": 95,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“我奶奶以前也会把各处打听来的故事记录下来着……”"
+      ]
+    },
+    {
+      "paragraph": 96,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那个记录……老人家留下的记录现在在哪里？里面都记载了些什么？”"
+      ]
+    },
+    {
+      "paragraph": 97,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女睁大了眼睛，急切得像个看见了中意玩具的孩子。"
+      ]
+    },
+    {
+      "paragraph": 98,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“在奶奶离开的时候，那本笔记被留在了46号休息站，供奉圆环之神的圣殿里。大人们把它叫做圣书，不许任何人翻阅……我也只在小时候，躺在奶奶怀里看过那本笔记，",
+        "看过上面记录的……”"
+      ]
+    },
+    {
+      "paragraph": 99,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安努力挖掘着过去的回忆，却只在一片混沌之中看到了那在濒死之时浮现在眼前的幻象。"
+      ]
+    },
+    {
+      "paragraph": 100,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“这个世界的尽头……”"
+      ]
+    },
+    {
+      "paragraph": 101,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她半信半疑地说出了自己所见的幻影。"
+      ]
+    },
+    {
+      "paragraph": 102,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“……一片大海。”"
+      ]
+    },
+    {
+      "paragraph": 103,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“带我们去那里。”"
+      ]
+    },
+    {
+      "paragraph": 104,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "以命令的口吻，魔女告诉玛丽安。"
+      ]
+    },
+    {
+      "paragraph": 105,
+      "scene": "01.txt",
+      "location": "road",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我们到去46号休息站去，去取回你属于奶奶的东西。”"
+      ]
+    },
+    {
+      "paragraph": 107,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "那家便利店原本只是出现在三人旅途中，一个平平无奇的落脚点。"
+      ]
+    },
+    {
+      "paragraph": 108,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "至少本该如此。"
+      ]
+    },
+    {
+      "paragraph": 109,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "它和那些有着相同三色条纹与一块支离破碎招牌的同类一样，孤独而诡异地伫立在荒芜的公路边上，依靠老旧的柴油电机维持着设备运转，",
+        "像座破败的神龛一样歆享着所有过路人的崇拜和香烟，拾荒者、暴走族、旅人、奴隶们都如朝圣般虔诚地踏入其中，神圣而庄严地从中仅取走自己需要的那部分货物。"
+      ]
+    },
+    {
+      "paragraph": 110,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "对于这个世界的流民像宗教信仰一般供奉着便利店的原因，魔女并不在乎，她蔑视这可笑的风俗，正如她蔑视一切般轻车熟路。",
+        "但这些孤零零的便利店是如何维护和补给的这一问题，却一直让她没法自然地摆出一副鄙夷的神情来。"
+      ]
+    },
+    {
+      "paragraph": 111,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“那是圆环之神的恩赐之所。”"
+      ]
+    },
+    {
+      "paragraph": 112,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "身为土著人代表的玛丽安给出的回答让一度让魔女辛苦地憋笑了一个小时，终于在玛丽安向她示范感激圆环之神恩赐的动作时爆笑了出来。"
+      ]
+    },
+    {
+      "paragraph": 113,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“噗哈哈哈哈——这不是在做拉花吗？”"
+      ]
+    },
+    {
+      "paragraph": 114,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "——那是一套将左手平摊在腹前，右手拇指与食指相扣，高悬在左手掌面上，缓缓地画出一个圆弧之后，以朝着胸口猛然一提作为收尾的动作。"
+      ]
+    },
+    {
+      "paragraph": 115,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "长期浸淫在纯真时代的魔女，少说看店员将这套动作展示过上百次，当玛丽安摆出起手势时，她便知晓了其中的含义，",
+        "更被那一本正经的庄重彻底粉碎了她努力坚持到此刻的表情管理。"
+      ]
+    },
+    {
+      "paragraph": 116,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "就连原本只是旁听着的店员小姐也遗憾地评头论足："
+      ]
+    },
+    {
+      "paragraph": 117,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“这样子画出来是空心的呀……”"
+      ]
+    },
+    {
+      "paragraph": 118,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "虚伪之月坠落后第111年，无始无终之地，黄昏。"
+      ]
+    },
+    {
+      "paragraph": 119,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "出于偶然的，三人一行在夜幕到来时分才风尘仆仆地赶到了便利店门外，打量着这座些许破旧但尚且灯火通明，里头还安着长椅和餐桌的可疑建筑，",
+        "一行人不得不打消了露宿荒野的想法，将摩托停放在了落地橱窗的灯光下。"
+      ]
+    },
+    {
+      "paragraph": 120,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "便利店内正用老旧的电台播放着一首古典吉他主音的小调，店员小姐惯例地开始在稀稀拉拉的货架上寻找起了日用品和食材，魔女则懒洋洋地在冷柜里挑选起了甜点，",
+        "只有玛丽安诚心诚意地冲着无人看管的货架祈祷起来，不住地打着“咖啡拉花”的手势，直到店员小姐将一份热好的速食便当递到了她的眼前。"
+      ]
+    },
+    {
+      "paragraph": 121,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“正餐前吃零食会发胖的哦。”"
+      ]
+    },
+    {
+      "paragraph": 122,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "这话是对正舔着嘴唇品尝巧克力雪糕的魔女说的，但对方直白地回以了一个“用得着你管”的白眼，拿着自己的那份便当坐到了橱窗前的座位上，",
+        "留下餐桌旁的店员毫无察觉地冲着玛丽安露出灿烂笑容。"
+      ]
+    },
+    {
+      "paragraph": 123,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "对于摆在眼前的这份来历不明的工业制品，玛丽安刚咀嚼了几口略显生硬的饭菜便情不自禁地发出了感慨。"
+      ]
+    },
+    {
+      "paragraph": 124,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“还是店员小姐做的饭好吃啊……”"
+      ]
+    },
+    {
+      "paragraph": 125,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "然后便察觉到了自己作为虔诚信徒的失言，慌慌张张地打起手势恳求“圆环之神”的宽恕来。"
+      ]
+    },
+    {
+      "paragraph": 126,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那不是理所当然，流水线上自动搅拌的米饭和无论谁煮都一个味道的块茎浇上预制的调味汁，怎么可能比得上亲身守候在烹调锅前的食物。”"
+      ]
+    },
+    {
+      "paragraph": 127,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "本就对玛丽安的虔诚嗤之以鼻的魔女小姐，坐在橱窗前，全然不顾就餐礼仪，炫耀似地摇动着塑料餐叉高谈阔论起来。"
+      ]
+    },
+    {
+      "paragraph": 128,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“可魔女大人不是从来都不做饭吗？”"
+      ]
+    },
+    {
+      "paragraph": 129,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我可是会咖喱饭的哦——把装咖喱汁的盒子取出来，浇到底下的米饭上。”"
+      ]
+    },
+    {
+      "paragraph": 130,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“那不是咖喱便当吗？”"
+      ]
+    },
+    {
+      "paragraph": 131,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“吃饭的时候不许说话！”"
+      ]
+    },
+    {
+      "paragraph": 132,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女猛地一挥动餐叉，一个圆滚滚的肉丸便不偏不倚地砸在了店员的额头上，随后蹦蹦跳跳地落在了货架之前的地板上，电台也在此刻突然切换到了一曲仅有贝斯、钢琴、",
+        "鼓伴奏的摇滚乐。"
+      ]
+    },
+    {
+      "paragraph": 133,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "I’m a shooting star leaping through the sky"
+      ]
+    },
+    {
+      "paragraph": 134,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "Like a tiger defying the laws of gravity"
+      ]
+    },
+    {
+      "paragraph": 135,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“哎哟……不要浪费食物啊……”"
+      ]
+    },
+    {
+      "paragraph": 136,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "店员小姐心疼着来之不易又四处跳跃的肉丸，也一头钻进了货架的间隙中，伴随着主唱高亢振奋的嗓音，和肉丸欢快地在货架间彼此追逐起来。"
+      ]
+    },
+    {
+      "paragraph": 137,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "I’m a racing car passing by like Lady Godiva"
+      ]
+    },
+    {
+      "paragraph": 138,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "I’m gonna go go go"
+      ]
+    },
+    {
+      "paragraph": 139,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "There’s no stopping me"
+      ]
+    },
+    {
+      "paragraph": 140,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女冷漠地瞄了一眼这场滑稽的闹剧，便转头冲玛丽安趁机竖起了餐叉，正色道："
+      ]
+    },
+    {
+      "paragraph": 141,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你就从来没好奇过吗？你们的那个什么圆环之神如果真的存在的话，为什么不直接把这些‘恩赐’送到你们的面前？为什么会在你奶奶被驱逐出家园的时候熟视无睹？",
+        "为什么在你被卖成奴隶的时候置若罔闻？为什么在你行将就木的时刻，出现在你眼前的是一个像我这样对它如此不敬的存在？”"
+      ]
+    },
+    {
+      "paragraph": 142,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“这，这都是圆环之神降下的考……考验……只要通过了考验，应许的恩赐就会……”"
+      ]
+    },
+    {
+      "paragraph": 143,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“就会降临在你那堆被秃鹫吃干抹净的骨头上吗？”"
+      ]
+    },
+    {
+      "paragraph": 144,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“死去的信徒就会……就会前往乐园……”"
+      ]
+    },
+    {
+      "paragraph": 145,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那么——”"
+      ]
+    },
+    {
+      "paragraph": 146,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "本就高昂的乐曲忽然在此刻加入了和声，迫使魔女深吸一口气，提高了自己嗓音："
+      ]
+    },
+    {
+      "paragraph": 147,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那个乐园在哪儿呢？"
+      ]
+    },
+    {
+      "paragraph": 148,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "是在这条公路的哪个方向呢？"
+      ]
+    },
+    {
+      "paragraph": 149,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "是用那只连结缔组织都被舔干净的手掌爬过去，还是让头颅像个风滚草一样骨碌骨碌地滚过去呢？"
+      ]
+    },
+    {
+      "paragraph": 150,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "说到底，你们中真的有人去过那个乐园吗？"
+      ]
+    },
+    {
+      "paragraph": 151,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "又有谁能说清那个乐园是什么样的呢？"
+      ]
+    },
+    {
+      "paragraph": 152,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "乐园里长着什么样的树、生着怎么样的草、开着怎么样的花、人们像动物一样在灌木丛里捡果子吃还是和现在一样找个便利店呢？"
+      ]
+    },
+    {
+      "paragraph": 153,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "那个便利店的书报栏里放着什么样的刊物，报纸的中缝里写着怎样的色情广告呢？"
+      ]
+    },
+    {
+      "paragraph": 154,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "那个乐园里也有像这个世界一样的公路吗？"
+      ]
+    },
+    {
+      "paragraph": 155,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "那个乐园的公路是否存在尽头呢？"
+      ]
+    },
+    {
+      "paragraph": 156,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "那个尽头又是什么样子呢？”"
+      ]
+    },
+    {
+      "paragraph": 157,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "那已然不是单纯的质问，在魔女接二连三地抛出一个个问题的同时，她也任凭私心恣意地吞没了内心的冷静，使之逐渐变质，",
+        "演化成了从玛丽安口中挖出某个既定回答的强词夺理式的咄咄逼人。"
+      ]
+    },
+    {
+      "paragraph": 158,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "那已经是霸凌了吧？已经放弃寻找消失肉丸的店员小姐从货架之间探出头，小声冲魔女发着牢骚，却被对方不加怜悯地直接无视，",
+        "只能眼睁睁地看着两个“小姑娘”陷入了可怕的僵持之中，只有沙沙作响的电台完全不看气氛地在兴奋高歌——"
+      ]
+    },
+    {
+      "paragraph": 159,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "Don’t stop me now (‘cause I’m havin’ a good time)"
+      ]
+    },
+    {
+      "paragraph": 160,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“不是这样的！”"
+      ]
+    },
+    {
+      "paragraph": 161,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "可店员的担忧显得有些多余，被这一连串无甚逻辑的问题追问的玛丽安，不但没有因此被逼上绝路，甚至一改柔弱且拘束的态度，气势十足地反驳起来："
+      ]
+    },
+    {
+      "paragraph": 162,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“乐园是存在的！”"
+      ]
+    },
+    {
+      "paragraph": 163,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她站了起来，无神的眼睛里闪烁起了湿润的神采，一片只在梦中浮现的风景的色彩。"
+      ]
+    },
+    {
+      "paragraph": 164,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "Don’t stop me now (yes I’m havin’ a good time)"
+      ]
+    },
+    {
+      "paragraph": 165,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“虽然我没有去过，虽然和大家说的不一样……但是存在的，奶奶说过的，乐园在公路的尽头！公路的尽头是一片大海！”"
+      ]
+    },
+    {
+      "paragraph": 166,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "电台",
+      "segments": [
+        "I don’t want to stop at all !!!"
+      ]
+    },
+    {
+      "paragraph": 167,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "这回答显得有些牛头不对马嘴，但从气势逼人的玛丽安身上涌现出的坚定感，却不再是先前如信徒般盲目的从众，取而代之的，是一股对深埋于内心的信念的坚持，",
+        "一种足以让人放弃动摇其根源的意志。"
+      ]
+    },
+    {
+      "paragraph": 168,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你奶奶净说了些什么胡话啊……”"
+      ]
+    },
+    {
+      "paragraph": 169,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "恰好伴随着一曲终了，已然放下餐叉结束对峙的魔女，嘴上依旧不肯放松地为自己缓解着一番攻势落空的尴尬，尽管作为旁观者的店员小姐已然一眼识破了她的装腔作势，",
+        "露出了和新妈妈一样甜腻的笑容扑了上去。"
+      ]
+    },
+    {
+      "paragraph": 170,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“真是个知错能改好孩子……”"
+      ]
+    },
+    {
+      "paragraph": 171,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "咚！店员小姐毛绒绒的脑袋被魔女狠狠地扣上了一记重拳。"
+      ]
+    },
+    {
+      "paragraph": 172,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“不要贴上来，小心我揍你哦！”"
+      ]
+    },
+    {
+      "paragraph": 173,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“这不是已经揍了吗……”"
+      ]
+    },
+    {
+      "paragraph": 174,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "刚刚那场非要一决胜负才罢休的辩论仿佛不曾发生一般，两人已经飞快地切换成了日常相处时行为模式，它残留的痕迹仅仅只剩下在玛丽安困惑地看向魔女时，",
+        "对方还会不自觉地闪烁起目光来。"
+      ]
+    },
+    {
+      "paragraph": 175,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "可就在魔女因为心虚而胡乱调整着目光朝向的此刻，却正巧在望向橱窗之外时，窥见了一幕不曾预料的情景——黑暗的公路上，有一对明亮的灯光正在迫近这里。"
+      ]
+    },
+    {
+      "paragraph": 176,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "这片荒野上并非只有她们三人——这是她们早已知晓的事实。"
+      ]
+    },
+    {
+      "paragraph": 177,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "实际上，虽然从未在行车时撞见其他人，但每每抵达作为中继点存在的便利店停留时，她们总能见到一些停靠在此休息的过客，有时三五成群，有时形单影只，",
+        "各自都出于一些目的驾车或徒步在公路上旅行。"
+      ]
+    },
+    {
+      "paragraph": 178,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "但迄今为止遇到的所有过客中，在座驾这方面最为考究的，也无非就是和她们一样的挎斗车，大部分旅人们乘坐的都是些布满了灰土，",
+        "更不知道何日便会骤然解体的破旧机车。"
+      ]
+    },
+    {
+      "paragraph": 179,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "而此刻出现在视野中的这一对灯光，却拥有着远非那些粗制滥造的改装车灯可以发出的亮度，在远方黑暗的天帷中移动着，如同一道席卷而来的光幕般耀眼。"
+      ]
+    },
+    {
+      "paragraph": 180,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "那是一对货车大灯。"
+      ]
+    },
+    {
+      "paragraph": 181,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "暗夜中浮现出一副朦胧的几何轮廓，数秒之后，一部暗绿色的厢式货车便冲破了夜晚的迷雾，赫然行驶在了公路的一侧，并在接近便利店的同时缓缓减速下来。"
+      ]
+    },
+    {
+      "paragraph": 182,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "便利店里的三人蹲在橱窗边缘挤作一团，小心地从中探出了半个脑袋，屏息注视着那部车厢上画白色条纹和怪异图案的货车，平稳地停在了便利店的左前方。"
+      ]
+    },
+    {
+      "paragraph": 183,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“那是圆环之神的标记……呜！”"
+      ]
+    },
+    {
+      "paragraph": 184,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安想要再说些什么，却被魔女用摘下的帽子堵住了嘴巴。"
+      ]
+    },
+    {
+      "paragraph": 185,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "货车没有熄火便车门大开，两个穿着深色工作服的男人从驾驶舱中爬出，一个走向了货车的尾部，开始开启货厢层层封锁的厢门，另一个则熟练地绕过车头，",
+        "径直地朝着便利店的大门走来。"
+      ]
+    },
+    {
+      "paragraph": 186,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "他们就是负责维护这些便利店的人，也就是你们所说的神明的使者……"
+      ]
+    },
+    {
+      "paragraph": 187,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女小声说出自己推断的同时，轻轻地拍了拍店员小姐的后背："
+      ]
+    },
+    {
+      "paragraph": 188,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "准备好了吗？"
+      ]
+    },
+    {
+      "paragraph": 189,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "准备什么？玛丽安诧异地回头望去，却只见到店员小姐精神抖擞地竖起了两只耳朵。"
+      ]
+    },
+    {
+      "paragraph": 190,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“呜……等一下！”"
+      ]
+    },
+    {
+      "paragraph": 191,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在她猛地挣开魔女束缚大喊出声的刹那，店员便小姐已经一脚踏在了橱窗下的矮墙上，借力站起的同时调整好了身姿，正对着被玛丽安叫声惊扰到的神秘男人。"
+      ]
+    },
+    {
+      "paragraph": 192,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在两人四目相对的瞬间，一场激烈的追逐便即刻上演——男人扭头便冲着来时的货车奔去，一边奔跑一边大声呼喊，引起了刚刚打开货厢的同伴的注意，",
+        "而店员小姐也猫着腰推开了便利店的大门，像是野兽一样弓着身子飞跃而出。"
+      ]
+    },
+    {
+      "paragraph": 193,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "来不及等待同伴从货厢中爬下，甚至来不及关上车门，男人跳上驾驶席尚未坐稳便发动了并未熄火的货车，在店员小姐如炮弹一般迫近的前一刻歪歪扭扭地甩动起了车身，",
+        "以一个和平稳一词毫无干系的姿态弹射起步，丢下了一地散落的货物疾驰而去。"
+      ]
+    },
+    {
+      "paragraph": 194,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "内燃机猛然启动的尘嚣久久未散，随后从便利店里走出的魔女捂着口鼻，快速地扫视了一眼洒落满地的便利商品，又回过头来看向了正站在便利店门口，",
+        "破坏了她试图留下那两个身份不明者计划的玛丽安。"
+      ]
+    },
+    {
+      "paragraph": 195,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她一脸愧疚地缩着身子，似乎是对即将到来的责罚做好了准备，却意外地没在魔女的眼中察觉到先前的敌意。"
+      ]
+    },
+    {
+      "paragraph": 196,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "像是早就料到会发生这事一样，魔女满不在乎地又移开了视线，望向了那部货车远去的方向。"
+      ]
+    },
+    {
+      "paragraph": 197,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你看清楚了吧？”"
+      ]
+    },
+    {
+      "paragraph": 198,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她问紧随着货车追出的店员。"
+      ]
+    },
+    {
+      "paragraph": 199,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“啊，这回看得一清二楚。”"
+      ]
+    },
+    {
+      "paragraph": 200,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "店员舒展着四肢，轻快地回答道。"
+      ]
+    },
+    {
+      "paragraph": 201,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“的确就是‘那个’呢。”"
+      ]
+    },
+    {
+      "paragraph": 202,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那个‘圆环之神’的标记，果然就是……”"
+      ]
+    },
+    {
+      "paragraph": 203,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女小心地整理了一下直到刚刚都还被捏在手里，略微有些变了形的三角帽，反手将其利落地扣在了头上。"
+      ]
+    },
+    {
+      "paragraph": 204,
+      "scene": "02.txt",
+      "location": "store",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“Star○ucks呢。”"
+      ]
+    },
+    {
+      "paragraph": 206,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“一开始，我们不知道电台还是有人在运行的，结果在听到ARK曲子的时候激动得差点翻了车……”"
+      ]
+    },
+    {
+      "paragraph": 207,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "坐在纯真时代露天茶座惯例的最外侧的圆桌旁，扎着一对很老实的羊角辫，但实际最不老实的女高中生小花一边吮吸着从柜台后面顺来的气泡饮料，",
+        "一边向魔女描述着过去旅行的经历。"
+      ]
+    },
+    {
+      "paragraph": 208,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“平时它就会播放一些上了年纪的乐队的曲子，皇后、枪花、齐柏林飞艇什么的，虽然叶子很喜欢，而且每次都能告诉我那些曲子的来历啦，",
+        "但我对听不懂的曲子果然还是没什么好感……”"
+      ]
+    },
+    {
+      "paragraph": 209,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "女高中生特有的喋喋不休意外地没有引起魔女的不耐烦，这个像地雷一样易爆的女孩，在其他人描述自己世界的经历时总是格外老实，专注地听取其中的每一个细节。"
+      ]
+    },
+    {
+      "paragraph": 210,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“结果那个收音机在被叶子拿来当武器的时候砸坏了，后面的日子，我们就只能自个儿人力伴奏了，还总是搞得一嘴沙子。虽然有点傻乎乎的，",
+        "但莫名其妙还挺有趣的——尤其是叶子唱那些我听不懂的曲子，一个人呛得咳嗽的时候。”"
+      ]
+    },
+    {
+      "paragraph": 211,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在小花结束了自己那番毫无逻辑又不知所谓的讲述之后，一直安静聆听着的魔女才终于似是而非地点了点头，用吸管搅动起了身前那杯照例的柠檬水来。"
+      ]
+    },
+    {
+      "paragraph": 212,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "片刻之后，她才依稀地从刚刚听闻的那段描述中，整理出了自己有些在意的只言片语。"
+      ]
+    },
+    {
+      "paragraph": 213,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你说的那个什么‘皇后’乐队，是一帮什么样的女生呢？”"
+      ]
+    },
+    {
+      "paragraph": 214,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "噗——！一脸认真的魔女问出这个问题，让小花不禁将还含在口中的饮料尽数喷出，涕泪横流地咳嗽了两分钟才缓过气来。"
+      ]
+    },
+    {
+      "paragraph": 215,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“虽然的确叫‘皇后’没错……”"
+      ]
+    },
+    {
+      "paragraph": 216,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "满脸狼狈的小花不知所措地挥舞着双手，试图从一无所有的空气中揪出个最佳解答出来。"
+      ]
+    },
+    {
+      "paragraph": 217,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“他们的确叫‘皇后’没错，但成员全部都是男性，不过主唱倒是位……嗯，双性恋偏男性取向者？”"
+      ]
+    },
+    {
+      "paragraph": 218,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“……”"
+      ]
+    },
+    {
+      "paragraph": 219,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "得到了一个怅惶回答的魔女没有作声，以一个见多识广的长寿者身份沉吟了许久，才终于咬牙切齿地回答道："
+      ]
+    },
+    {
+      "paragraph": 220,
+      "scene": "03.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我这辈子都不想再听到关于这个乐队的内容了。”"
+      ]
+    },
+    {
+      "paragraph": 221,
+      "scene": "03.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "小花和叶子乘坐的摩托虽然经过了魔女的修复已经焕然一新，但那些并非原装于摩托上的设施，魔女也没有办法让它们凭空复原到原本的位置上。"
+      ]
+    },
+    {
+      "paragraph": 222,
+      "scene": "03.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "车上并没有什么娱乐设施，但不论是驾车的店员还是乘车的魔女也都毫不在意，店员本身就是一种光是进行氧化代谢都能感受到快乐的存在，而魔女则是个自得其乐的行家，",
+        "换句话来说是——她可以对除了自己之外的一切都不屑一顾。"
+      ]
+    },
+    {
+      "paragraph": 223,
+      "scene": "03.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "但玛丽安不论在生理还是心理上都远不如两位同行者强韧，虽然已经明确了目的地是自己的故乡，但又不知故乡在何处，这枯燥乏味又漫无止境的旅途着实让人无法忍受。",
+        "那缺少蜿蜒的公路就这么干枯笔直地延伸向天边，从眼前一掠而过的植物也渐渐长成了一致的外观，仿佛连荒野上的石头都在朝着统一的轮廓风化着。"
+      ]
+    },
+    {
+      "paragraph": 224,
+      "scene": "03.txt",
+      "location": "road",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "我们做些什么打发时间吧？这样的提案无数次地萌生在玛丽安的脑海，又因为一股负罪感被强压了下去，放走了两名神使的自己尚且还未受到魔女的惩罚，",
+        "现在的她又怎么敢向魔女提出任何请求呢？"
+      ]
+    },
+    {
+      "paragraph": 225,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "万幸的是，这煎熬的困境在三人午间驻车时终于出现了转机。"
+      ]
+    },
+    {
+      "paragraph": 226,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "太阳高挂在天空的正中，店员小姐将摩托停在了一块坍塌的石壁旁，熟练地用石块与树枝支起了简易的营火，开始就地料理起了从摩托的储物格中取出的食材。",
+        "魔女则在石壁的阴影中铺下了野营垫，将脸扣在了帽子底下休息起来。"
+      ]
+    },
+    {
+      "paragraph": 227,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "随着炊烟袅袅升起，荒漠里难得一闻的新鲜料理的香味弥散在四周的空气中，吸引来了一些聒噪的飞虫，也吸引来了一批不速之客。"
+      ]
+    },
+    {
+      "paragraph": 228,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "这公路上并非只有她们三人，这是早已判明的事实，但她们也从未和其他公路上的过客产生过交集，仅仅是不断地彼此擦身而过。而这一回，",
+        "当那支由数架改装摩托组成的车队风尘仆仆地途径一旁的公路时，却非同寻常地停驻了下来。"
+      ]
+    },
+    {
+      "paragraph": 229,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "他们也嗅到那股荒漠上罕见的，经过了精心烹调的食材所散发出的复合香气，并因此而聚集了过来。那是一伙穿着浮夸破旧的机车夹克，集群着在公路上狂飙，",
+        "居无定所地享受着沿途夺取快感的劫掠者。"
+      ]
+    },
+    {
+      "paragraph": 230,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "其中体格最为健硕，戴着一副太阳镜的领队，率领着一种畸形的同伴来到了三人的营火旁，蹲下来指着店员小姐正在料理的野营餐盒问道。"
+      ]
+    },
+    {
+      "paragraph": 231,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“这是什么？”"
+      ]
+    },
+    {
+      "paragraph": 232,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“用牛肉、洋葱、西红柿和奶油做的炖菜。”"
+      ]
+    },
+    {
+      "paragraph": 233,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "",
+      "segments": [
+        "毫无戒心的店员小姐老老实实地回答了对方的提问，并顺势从餐盒里盛起了一勺鲜红浓稠的汤汁品尝起来。"
+      ]
+    },
+    {
+      "paragraph": 234,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“……马上就可以出锅了。”"
+      ]
+    },
+    {
+      "paragraph": 235,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "",
+      "segments": [
+        "她那超乎常理的乖巧反应，搭配着汤汁浓烈的香气，让领队情不自禁地舔舐着自己肮脏干枯的下唇，露出了一张没有半点诚意的笑脸来。"
+      ]
+    },
+    {
+      "paragraph": 236,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“啊，这个可以给我们尝尝嘛，我们赶了一天的路还没吃过东西呢？”"
+      ]
+    },
+    {
+      "paragraph": 237,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "",
+      "segments": [
+        "身后的同伴们，也应和着领队干瘪的小声，显露出一副叽叽喳喳的欢声笑语来。"
+      ]
+    },
+    {
+      "paragraph": 238,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“但是你们有那么多人，我们这点食物会不够分的呀？”"
+      ]
+    },
+    {
+      "paragraph": 239,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“不会的，不会的……”"
+      ]
+    },
+    {
+      "paragraph": 240,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "",
+      "segments": [
+        "领队狡辩着，竖起一根指头。"
+      ]
+    },
+    {
+      "paragraph": 241,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“我们一人只吃一口就好了，就吃一口。”"
+      ]
+    },
+    {
+      "paragraph": 242,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“就一口哦？”"
+      ]
+    },
+    {
+      "paragraph": 243,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“就一口。”"
+      ]
+    },
+    {
+      "paragraph": 244,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "",
+      "segments": [
+        "在领队连连应允下，将信将疑的店员小姐打开了盛饭着炖菜的餐盒，同时将一只没使用过的汤匙递了出去。"
+      ]
+    },
+    {
+      "paragraph": 245,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk"
+      ],
+      "speaker": "",
+      "segments": [
+        "而后，在店员小姐和玛丽安的注视下，领队哈哈大笑地从身后的同伴手中接过了一只脏兮兮的不锈钢杯，猛地从餐盒里舀了几乎有总量三成的满满一杯，",
+        "不等店员小姐有所反应就海饮了一大口，紧接着就再度向餐盒伸出手去。"
+      ]
+    },
+    {
+      "paragraph": 246,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“你怎么可以这样！”"
+      ]
+    },
+    {
+      "paragraph": 247,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "店员小姐连忙护住了餐盒，大声质问起了眼前的男人。"
+      ]
+    },
+    {
+      "paragraph": 248,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "但那男人依旧不怀好意地笑着。"
+      ]
+    },
+    {
+      "paragraph": 249,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“小姐，我们是约定了只吃一口，可没约定过用什么来盛啊？我身后的兄弟们可还饿着肚子呢！”"
+      ]
+    },
+    {
+      "paragraph": 250,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "是啊是啊，我们都还饿着呢。他身后的同伴们齐声应和着。"
+      ]
+    },
+    {
+      "paragraph": 251,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“可是，可是……”"
+      ]
+    },
+    {
+      "paragraph": 252,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "在众人的起哄下，本就不善言辞的店员小姐苦思冥想着应对这套狡辩的台词，嘴里结巴着卡了壳。"
+      ]
+    },
+    {
+      "paragraph": 253,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“你们这是在强词夺理！”"
+      ]
+    },
+    {
+      "paragraph": 254,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "在这一刻站到店员身边的，毫不收敛地指出了对方行径之人，是在一旁目睹了全程的玛丽安。"
+      ]
+    },
+    {
+      "paragraph": 255,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "但对于玛丽安这厉声的喝止，领队只是在瞥了她一眼后就讪笑着讥讽道。"
+      ]
+    },
+    {
+      "paragraph": 256,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“区区一个奴隶，还想插手主子的对谈吗？”"
+      ]
+    },
+    {
+      "paragraph": 257,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "刹那间，玛丽安感到自己忽然喘不上气来，脖颈上那块写有自己名字的奴隶铭牌像是铰链一样勒紧了她，勒得她涨红了脸，仿佛快要窒息。"
+      ]
+    },
+    {
+      "paragraph": 258,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "见到玛丽安的这副反应，领队更加得意忘形地大笑起来，他指点着面前的两位少女，露出两排黑褐色的黄牙。"
+      ]
+    },
+    {
+      "paragraph": 259,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“一个傻子！一个奴才！”"
+      ]
+    },
+    {
+      "paragraph": 260,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "marian"
+      ],
+      "speaker": "",
+      "segments": [
+        "他一手拍开了店员护着餐盒的手，就要把不锈钢杯往菜汤里送。"
+      ]
+    },
+    {
+      "paragraph": 261,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“吵死了。”"
+      ]
+    },
+    {
+      "paragraph": 262,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "却在一声抱怨中停下了动作。"
+      ]
+    },
+    {
+      "paragraph": 263,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在远离争执中心的阴影中，魔女小姐将盖住面部的帽子推开一条缝隙，皱眉注视着不请自来的客人们。"
+      ]
+    },
+    {
+      "paragraph": 264,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "领队见状吹起了下流的口哨。"
+      ]
+    },
+    {
+      "paragraph": 265,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“没想到饭后甜点还不只两份呢。”"
+      ]
+    },
+    {
+      "paragraph": 266,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女没有对这轻佻的挑衅作出反应，慢悠悠地从野营垫上站起了身，摆着一副不耐烦的神情踱步到了营火的旁边，扫视了一番有些狼藉的现场。"
+      ]
+    },
+    {
+      "paragraph": 267,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "而后，预料之外地朝着两名同伴开起火来。"
+      ]
+    },
+    {
+      "paragraph": 268,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你们两个白痴，既然已经中了人家的圈套，就老老实实地为愚蠢付出代价啊。”"
+      ]
+    },
+    {
+      "paragraph": 269,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在玛丽安瞠目结舌的注视下，她强硬地推开了守在餐盒旁的店员小姐，隔着营火蹲在了领队的正前方，递过去一只勺子。"
+      ]
+    },
+    {
+      "paragraph": 270,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“喏，它们现在是属于你的了，不要再做什么小动作了，好好享用你的战利品吧。”"
+      ]
+    },
+    {
+      "paragraph": 271,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "被魔女一系列反常之举弄得有些摸不着头脑的领队尴尬地看着眼前的汤勺，最终半信半疑地放下了手中的杯子，将汤勺接过。"
+      ]
+    },
+    {
+      "paragraph": 272,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“早这么听话不就好了？”"
+      ]
+    },
+    {
+      "paragraph": 273,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "然后，又用空出的左手接过了魔女拎着的餐盒。"
+      ]
+    },
+    {
+      "paragraph": 274,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“嗯？”"
+      ]
+    },
+    {
+      "paragraph": 275,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在左手感受到反常热量的同时，他才回想起手中餐盒刚刚的处境——它直到刚刚被在被火焰持续炙烤着，底部已经堆积着一层碳化的表皮，内部还盛满了令舌尖颤抖的热汤。"
+      ]
+    },
+    {
+      "paragraph": 276,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "啊——！领队嚎叫着丢下了滚烫的餐盒，任由鲜红的汤汁流淌了一地，痛苦地看着自己的左手掌心中迅速鼓起的水泡扩散开，抓狂地怒吼起来。"
+      ]
+    },
+    {
+      "paragraph": 277,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“你这臭娘们！竟然敢耍我！”"
+      ]
+    },
+    {
+      "paragraph": 278,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我刚刚不说了吗……”"
+      ]
+    },
+    {
+      "paragraph": 279,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "面对着暴怒的劫掠者领队，魔女小姐的脸上看不到一丝惧色。"
+      ]
+    },
+    {
+      "paragraph": 280,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“既然是个白痴，就老老实实地为愚蠢付出代价啊？”"
+      ]
+    },
+    {
+      "paragraph": 281,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“给我把她们抓起来！”"
+      ]
+    },
+    {
+      "paragraph": 282,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "领队咆哮着命令自己的手下。"
+      ]
+    },
+    {
+      "paragraph": 283,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“给我把他们都干掉。”"
+      ]
+    },
+    {
+      "paragraph": 284,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女不甘示弱地命令着身边的店员。"
+      ]
+    },
+    {
+      "paragraph": 285,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“可店长说过不许和别人打架啊？”"
+      ]
+    },
+    {
+      "paragraph": 286,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "店员小姐困扰地耷拉着耳朵，让魔女又不得不反问道。"
+      ]
+    },
+    {
+      "paragraph": 287,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“到底谁说了才算数，那只鸭子还是我？”"
+      ]
+    },
+    {
+      "paragraph": 288,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "唔……店员迟疑地思索了片刻，然后重新将两只耳朵立了起来。"
+      ]
+    },
+    {
+      "paragraph": 289,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“魔女大人说了算。”"
+      ]
+    },
+    {
+      "paragraph": 290,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "接下来呈现在玛丽安眼前的，是一副与店员小姐先前在便利店里所展示的灵活身姿截然不同的景象——"
+      ]
+    },
+    {
+      "paragraph": 291,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "随着她舒展四肢，手脚并用地如野兽一般冲向了那帮人多势众的劫掠者，此起彼伏的哀嚎便在人群的中心爆发开来，",
+        "那只是略显高大的兽耳少女夸张地挥舞着体型远大与自己的匪徒们当作武器，势不可挡地从众人的包围中横扫而过，将每一个胆敢阻拦在她前进方向上的敌人击飞到半空中。"
+      ]
+    },
+    {
+      "paragraph": 292,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "没有第一时间被卷入这场风暴中的匪徒们也试图进行反击，但不论赤手空拳还是使用普通的武器都无法靠近那女孩的身边，就算驾驶摩托冲撞过去，",
+        "也会被对方用一条毛茸茸的尾巴从座位上拍下来，反过来被她用摩托像个门球一样打飞出去。"
+      ]
+    },
+    {
+      "paragraph": 293,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "仅仅几分钟后，那帮吵闹的劫掠者们便一个个瘫倒在地，只能勉强用鼻腔和喉咙配合着发出些单音节的哀鸣了。"
+      ]
+    },
+    {
+      "paragraph": 294,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "而后，店员小姐双手举着一架摩托，一步一跳地来到了从一开始就没有介入这场战斗的领队跟前，微笑地看着他磕头乞降，等待着魔女发号最后的施令。"
+      ]
+    },
+    {
+      "paragraph": 295,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“他明明没有长尾巴，却一直想要摇尾巴呢。”"
+      ]
+    },
+    {
+      "paragraph": 296,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "当魔女慢悠悠地走到两人身边时，店员小姐这样向她汇报着。"
+      ]
+    },
+    {
+      "paragraph": 297,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "而跪倒在地的领队，则像感受不到左手炽热的疼痛一样，一股劲儿地合着手。"
+      ]
+    },
+    {
+      "paragraph": 298,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“是小的有眼不识泰山，请绕我一命啊！只要放过我的话，我什么都肯做的！”"
+      ]
+    },
+    {
+      "paragraph": 299,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“哼哼，那你可完蛋了，魔女大人心眼很小的……啊疼疼疼！”"
+      ]
+    },
+    {
+      "paragraph": 300,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女狠狠地在店员小姐后脑勺上赏赐了一番之后，俯身在了领队跟前。"
+      ]
+    },
+    {
+      "paragraph": 301,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“别那么害怕嘛，我也‘不小心’把你手烫伤了，严格来说我这边也有错才对……”"
+      ]
+    },
+    {
+      "paragraph": 302,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“不不不！那怎么会是魔女大人您的错呢，是我‘不小心’自己烫到的，还想要赖到您的身上，请饶了小的吧！”"
+      ]
+    },
+    {
+      "paragraph": 303,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "一改先前嚣张跋扈的态度，领队忙不迭地把责任往自己的身上揽。"
+      ]
+    },
+    {
+      "paragraph": 304,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“原来是这么一回事儿啊？太好了，那我也就能松一口气了。”"
+      ]
+    },
+    {
+      "paragraph": 305,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女毫不遮掩语气中的愉悦，看着眼前狼狈的男人盘算了一会儿。"
+      ]
+    },
+    {
+      "paragraph": 306,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那么说起来，你刚刚是不是把我们的午饭给打翻了啊？”"
+      ]
+    },
+    {
+      "paragraph": 307,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她伸出手，指向了刚刚被领队随手丢在地上的爬满了沙土的菜汤。"
+      ]
+    },
+    {
+      "paragraph": 308,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“这，啊……是是是！是我打翻的，我愿意补偿！我什么都会做的……”"
+      ]
+    },
+    {
+      "paragraph": 309,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“另外，我们好像还缺一个向导带我们去46号休息站来着呢？”"
+      ]
+    },
+    {
+      "paragraph": 310,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“啊啊啊，我知道那个地方！我经过过那个地方……让小的来带路吧！”"
+      ]
+    },
+    {
+      "paragraph": 311,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "看到了一线生机的领队磕头磕得更加卖力了。"
+      ]
+    },
+    {
+      "paragraph": 312,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“啊呀，您愿意帮我们话，那可就再好不过了呢……”"
+      ]
+    },
+    {
+      "paragraph": 313,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "强忍着得意忘形的笑容，魔女又瞄了一眼被所见景象惊吓得呆若木鸡的玛丽安，又突然一转话头。"
+      ]
+    },
+    {
+      "paragraph": 314,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“不过呢，我们有一位旅伴，一路都找不到人说话，有些闷呢。”"
+      ]
+    },
+    {
+      "paragraph": 315,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "掠夺者领队",
+      "segments": [
+        "“啊……啊？”"
+      ]
+    },
+    {
+      "paragraph": 316,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "这突如其来的话锋一转，让匍匐在地的领队一时间有些反应不过来。"
+      ]
+    },
+    {
+      "paragraph": 317,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "但魔女小姐全然没有在意他的感想，只是冲着刚刚回过神来的玛丽安问道。"
+      ]
+    },
+    {
+      "paragraph": 318,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“玛丽安小姐，沙皮和柯基，您更喜欢哪一种呢？”"
+      ]
+    },
+    {
+      "paragraph": 319,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "欸？"
+      ]
+    },
+    {
+      "paragraph": 320,
+      "scene": "03.txt",
+      "location": "camp",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安茫然地立在原地，不知该回答些什么是好。"
+      ]
+    },
+    {
+      "paragraph": 322,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "虚伪之月坠落后第111年，46号休息站，黄昏。"
+      ]
+    },
+    {
+      "paragraph": 323,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "玛丽安热情地冲着离去的领队挥着手，他还没从长期四足行走的阵痛中恢复过来，只能以一种缓慢且滑稽的姿态，手脚并用地离开这块是非之地。"
+      ]
+    },
+    {
+      "paragraph": 324,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "在他的指引下，一行人有的放矢地寻找着前进方向，没耗费多长时日，便穿过了一条长长的隧道，远远地看见了一块打着数字46的巨大广告牌。"
+      ]
+    },
+    {
+      "paragraph": 325,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "说不清自己离开了多少年月，眼前的46号休息站，理应被称为故乡的地方，带给玛丽安的却是一种全然陌生的感觉。"
+      ]
+    },
+    {
+      "paragraph": 326,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“加油站、地面商铺、写字楼、公共食堂、大型供水设施、大片平地……这个服务区原来的规模不小啊。”"
+      ]
+    },
+    {
+      "paragraph": 327,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "根据女高中生们转述的经验，已然摸清了公路设施用途的魔女，仅仅是站在车斗上张望了一番便揣摩出了这个休息站原本的形态。"
+      ]
+    },
+    {
+      "paragraph": 328,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“还有葡萄的味道。”"
+      ]
+    },
+    {
+      "paragraph": 329,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "正抽搐着将摩托停靠在何处的店员补充道。"
+      ]
+    },
+    {
+      "paragraph": 330,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "沿着从公路旁生出的支道前进，一连片茂盛的葡萄架和一个大致荒废了的加油站便出现在了视线的两侧。再往前深入一点，便柳暗花明似地出现了一大片被开垦过的农地，",
+        "从纵横在农田间的道路上的褪色线条可以看出，这儿原本应该是停车场的样子。"
+      ]
+    },
+    {
+      "paragraph": 331,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "而在这片农地的前方，一连串被拆去了门面的破旧商铺正中，有一处原本是接待大厅似的建筑被精心收拾过，一块旗帜似的广告帆布被郑重其事地悬挂在门廊上，",
+        "接受着每一个来往住民的注视与膜拜。"
+      ]
+    },
+    {
+      "paragraph": 332,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“那是供奉圆环之神的圣殿。”"
+      ]
+    },
+    {
+      "paragraph": 333,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "经由玛丽安的说明，魔女和店员理解了那怪异装潢的用意，然后不约而同地狂笑不止。"
+      ]
+    },
+    {
+      "paragraph": 334,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我说的吧……果然，果然是那个……”"
+      ]
+    },
+    {
+      "paragraph": 335,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女伸手指向了悬挂在圣殿门廊上的旗帜：在深绿的底色中央，坠饰着一个用白色实线描绘着一个塞壬海妖的圆形图标。"
+      ]
+    },
+    {
+      "paragraph": 336,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“星○克吧！”"
+      ]
+    },
+    {
+      "paragraph": 337,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“……难怪是用拉花的手势呢。”"
+      ]
+    },
+    {
+      "paragraph": 338,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安仍未知晓两人放肆讪笑的奥秘，但目睹过“神使”们落荒而逃的景象的她如今在望向圣殿时，却也没有了过去那盈满内心的崇敬之情，",
+        "比起那个一直以来都悬挂其上语焉不详的奇怪图腾，她此刻更在意的是被供奉在圣殿之中，原属于奶奶的东西。"
+      ]
+    },
+    {
+      "paragraph": 339,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "当地的保安团，一些穿着肮脏护甲，手持简陋武器的青壮年们，很快便向着突然造访的三人聚拢过来。在一番牛头不对马嘴的扯皮后，",
+        "终于有其中一个较为年长的团员认出了坐在后座上的玛丽安。"
+      ]
+    },
+    {
+      "paragraph": 340,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "年长的保安",
+      "segments": [
+        "“啊，这位小姐……难道说，你是那位玛丽亚的孙女吗？”"
+      ]
+    },
+    {
+      "paragraph": 341,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "而后，恍然大悟的赞同与应和，像是揭开谜底的马后炮一样在团员们之中此起彼伏。"
+      ]
+    },
+    {
+      "paragraph": 342,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "保安团",
+      "segments": [
+        "“这是圣女的孙女？”"
+      ]
+    },
+    {
+      "paragraph": 343,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "保安团",
+      "segments": [
+        "“就是半年前失踪的孩子们的其中一个吗？”"
+      ]
+    },
+    {
+      "paragraph": 344,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "保安团",
+      "segments": [
+        "“你这段时间都到哪里去啦？”"
+      ]
+    },
+    {
+      "paragraph": 345,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "不像是有意隐瞒，仿佛真的对玛丽安被卖到奴隶贩子手上一事毫无所知，保安团的成员们关切地询问正感受着一股无名业火烧灼的玛丽安，",
+        "困惑地看着她痛苦地抓挠自己的脖颈，困难地试图读出那上面本该很简单的一串名字，困扰地想搞明白自己眼中所见景象之间的联系。"
+      ]
+    },
+    {
+      "paragraph": 346,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "正在从圣殿中走出，穿着整洁长袍的长老们，看到了这群聚集在一起的年青人，困顿地眯起了眼睛。"
+      ]
+    },
+    {
+      "paragraph": 347,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "被隔绝在当地人小团体之外的魔女对这些土人们的温情时刻毫无兴趣，百无聊赖地仰起头望了望天。"
+      ]
+    },
+    {
+      "paragraph": 348,
+      "scene": "04.txt",
+      "location": "station",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "天色已然入夜，夜空中罕见地泛出了点点星光。"
+      ]
+    },
+    {
+      "paragraph": 349,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“……我听到有人，或者说那些曾经是‘人’的‘树’肢体因为触碰到了障碍而折断，看到那一截枯枝一样的躯体落在了地面厚厚的苔藓上，一瞬间就吸干了其中的水分。",
+        "我们跟着它们行走了差不多有半个小时，按叶子的说法，我们那是已经……不，还是在延安路上。"
+      ]
+    },
+    {
+      "paragraph": 350,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "对那些畸形且迟缓的人们来说，那条延安路实在是太长太长了。我们没有再继续尾随它们，因为即使我们从它们身边走过，它们也不会对此作出任何的反应。",
+        "叶子拉着我的手，想要就这么径直走到队列的正前方去。"
+      ]
+    },
+    {
+      "paragraph": 351,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "但我们加快脚步之后走了没多远，就发现那队伍的前头其实已经停止了下来。它们像是最虔诚的教徒一样，在一棵十多人高，十多人才能围抱的一棵大树前停下了脚步，",
+        "围绕着它跪拜在地。"
+      ]
+    },
+    {
+      "paragraph": 352,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "等再接近一点的时候，我们才发现，它们所做的并非朝拜，而是将双脚扎根在了那棵树前方的土地上。越是靠近那棵树的躯体便越是干枯，越是接近那棵树，",
+        "被吸干的躯体种类便越是丰富，这棵大树周遭的土地像是头腌臜贪食的巨兽，不挑食地咀嚼着送入口中的食物，只吐出一截各式各样，被抽离了骨髓，",
+        "再也没有一丝营养的骨头来。”"
+      ]
+    },
+    {
+      "paragraph": 353,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "纯真时代露天茶座最外侧的圆桌上，扎羊角辫的女高中生正坐在塑料椅上讲述着旅行的“往事”，一言不发的魔女则坐在一边，干捧着喝了一半的柠檬水，专注地倾听着。"
+      ]
+    },
+    {
+      "paragraph": 354,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“那棵树的表面有许多伤疤似的缺口，时不时便会有一小股接着一小股的孢子从中喷发而出。它们从这里被生产出来，集结成军队去袭击废墟中的生物，",
+        "然后将那些倒霉蛋转化成这种丧失了神智的行尸走肉，成为生贽再回到这个地方交出自己的生气，以便让它们变得更加繁盛。那片在废墟之中突兀出现的森林，",
+        "便是在这一轮接着一轮的供奉中，在产生的尸体上萌发的墓地……”"
+      ]
+    },
+    {
+      "paragraph": 355,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "讲述还没有结束，但唯一的倾听着却在此刻歪着头露出了一副复杂的表情，迫使着讲述着停了下来，小心翼翼地发问："
+      ]
+    },
+    {
+      "paragraph": 356,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“请问，有什么不对劲的地方吗？”"
+      ]
+    },
+    {
+      "paragraph": 357,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“没什么，只是……”"
+      ]
+    },
+    {
+      "paragraph": 358,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女打了一个没有声音的响指，女高中生像是终于松了一口气一样，从正坐的姿态顷刻萎靡了下来。"
+      ]
+    },
+    {
+      "paragraph": 359,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“……无意义的修辞太多了。”"
+      ]
+    },
+    {
+      "paragraph": 360,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "小花",
+      "segments": [
+        "“欸——明明是你非要给我用‘说话像个说书人’的魔法的啊！而且我这才刚讲到关键的地方，那棵树其实就是以前都市传说里的‘龙柱’这事儿还没有……”"
+      ]
+    },
+    {
+      "paragraph": 361,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那种无聊的事情怎样都好了……自然报复人类的故事我听得耳朵都起茧子了。”"
+      ]
+    },
+    {
+      "paragraph": 362,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "像是真的不感兴趣似的，魔女困倦地打起了哈欠。"
+      ]
+    },
+    {
+      "paragraph": 363,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“恒久如自然这样的个体才不会为生活在其中的种群怄气，归根结底只是人类不断地在毁灭自己。”"
+      ]
+    },
+    {
+      "paragraph": 364,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "人造的灾难，人为的死亡……诸如此类的，魔女呢喃着。"
+      ]
+    },
+    {
+      "paragraph": 365,
+      "scene": "04.txt",
+      "location": "cafe",
+      "figures": [
+        "flower",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“一如既往罢了。”"
+      ]
+    },
+    {
+      "paragraph": 366,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "虚伪之月坠落后第111年，46号休息站，是夜。"
+      ]
+    },
+    {
+      "paragraph": 367,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [],
+      "speaker": "长老",
+      "segments": [
+        "玛丽亚女士留下的笔记是很重要的圣物，即便您是她的孙女，我们也没法这么草率地就将它交出来，按照教条，需要准备一场正式的交接仪式，才能将它移交出去。"
+      ]
+    },
+    {
+      "paragraph": 368,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "——得到了这般客套的回答后，玛丽安一行人被安置在她过去的住所里。"
+      ]
+    },
+    {
+      "paragraph": 369,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "虽然46号休息站原本是个颇具规模的服务区，但那些结实而宝贵的地表建筑要被优先用来当作公共设施来使用，被各式仓库和工作区挤占后为数不多空置的房间，",
+        "也被分配给或德高望重、或职责重要的个人了。像玛丽安和她奶奶这般不事生产的居民，只能居住在人们之后挖掘和搭建的简易地下室里。"
+      ]
+    },
+    {
+      "paragraph": 370,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "玛丽安和奶奶居住的房间，是个只容得下一张单人床和一张矮桌的狭小空间，不够紧实的四壁上夯满了纹理不一的预制木板，用来遮挡接缝的海报上布满了裂纹和霉斑，",
+        "除了统一的排气管道之外没有任何通风设施潮湿黑暗中，只有一盏不太明亮的钨丝灯泡强撑着放射出一些土黄色的光线，将本就残破的室内照射得更为衰败。"
+      ]
+    },
+    {
+      "paragraph": 371,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "面对这样的住所，捏着鼻子的魔女足足在门口站了两分钟，才憋出这么一句话来。"
+      ]
+    },
+    {
+      "paragraph": 372,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“啊，这种地方我还是知道的，听说古英格兰人为了不让牲畜和下水道的臭味扩散到住宅里，会把棚舍甚至厨房设置在地下。”"
+      ]
+    },
+    {
+      "paragraph": 373,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "可哪怕是这么露骨的讽刺，也没让故地重游的玛丽安心情因此受到影响，她的意识已经由于再见到阔别已久的景色和躯体变得貌合神离，",
+        "手足无措地在这方并不宽阔的空间里来回打着转，想要找寻出一个可以作为起点，向自己的旅伴说明自己那尚且微小却依旧满足的人生之物。"
+      ]
+    },
+    {
+      "paragraph": 374,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "在这张矮小的矮桌旁，奶奶总会神奇地拿出一些休息站里从未见过的食材与果实；在那张破旧但整洁小床上，奶奶将自己抱在怀中，一页一页地讲述着笔记上记录的景象，",
+        "绘声绘色地介绍起那个没有黄沙的世界；那千疮百孔的墙面上，满是奶奶带着自己修补的痕迹，她记得每一枚钉子是镶入那些空心木板的时刻，",
+        "记得每一张即将剥落的海报的来历，和它后面遮盖的破洞的形状。"
+      ]
+    },
+    {
+      "paragraph": 375,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "几千几万的回忆如沙暴一样涌入玛丽安的脑中，却无法汇聚出一个具体的形状，只是反复地在风中勾勒出一个缥缈的轮廓，又在她试图看清时飞散而去。",
+        "这场回程开始之际便一直伴随自己的，想要言说却不知该说些何物的感受，在此刻竟变得如此具体，那个一直让自己心怀芥蒂却不明所以的东西，",
+        "只欠一伸手就好像能抓到似的。"
+      ]
+    },
+    {
+      "paragraph": 376,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "只是这只什么都握不住的手，又该伸向何方呢？"
+      ]
+    },
+    {
+      "paragraph": 377,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“我们来准备晚饭吧！”"
+      ]
+    },
+    {
+      "paragraph": 378,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "还是务实的店员小姐擅长打破僵局。"
+      ]
+    },
+    {
+      "paragraph": 379,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "店员小姐",
+      "segments": [
+        "“外面有食堂的吧，我们去食堂看看吧！”"
+      ]
+    },
+    {
+      "paragraph": 380,
+      "scene": "04.txt",
+      "location": "room",
+      "figures": [
+        "clerk",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "强硬地牵起了玛丽安的手，店员小姐拉着她走出了这个闭塞的房间，向休息站宽阔的广场奔去。只有依旧捏着鼻子的魔女小姐，仍旧嫌恶地打量着这个破旧的房间，",
+        "仿佛从中看到了什么异样一般皱紧了眉头。"
+      ]
+    },
+    {
+      "paragraph": 382,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "虚伪之月坠落后第111年，46号休息站，同夜。"
+      ]
+    },
+    {
+      "paragraph": 383,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [],
+      "speaker": "",
+      "segments": [
+        "玛丽安再次见到魔女时，她正背对着圣殿的入口，坐在休息站的广场上看星星。"
+      ]
+    },
+    {
+      "paragraph": 384,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“店员小姐刚刚说她去给您送晚餐了……”"
+      ]
+    },
+    {
+      "paragraph": 385,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我让她先回去了。”"
+      ]
+    },
+    {
+      "paragraph": 386,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女冷冰冰地回答，注视着星空的目光没有因为和玛丽安的对话发生一点偏移。"
+      ]
+    },
+    {
+      "paragraph": 387,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“魔女大人是有什么心事吗？”"
+      ]
+    },
+    {
+      "paragraph": 388,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "受原本唯一对魔女保持尊称的笨蛋兽人影响，玛丽安也不自觉地开始对魔女使用起敬语来，这反倒让一度要求他人对自己使用敬称的魔女都忍不住起了一身鸡皮疙瘩。"
+      ]
+    },
+    {
+      "paragraph": 389,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“没有……”"
+      ]
+    },
+    {
+      "paragraph": 390,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "她矢口否认，然后像只猛禽一样转过头，目光锐利地注视着玛丽安。"
+      ]
+    },
+    {
+      "paragraph": 391,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“倒不如说，一般会说出这种话的人才是心事重重的那个，你这是还嫌一路上给我添得麻烦不够多吗？”"
+      ]
+    },
+    {
+      "paragraph": 392,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“……”"
+      ]
+    },
+    {
+      "paragraph": 393,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "面对这锋利的诘问，玛丽安又胆怯地陷入了沉默，让本就皱着眉的魔女露出了更为不快的表情。"
+      ]
+    },
+    {
+      "paragraph": 394,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“不过，只要你做出保证，能把你奶奶的那本笔记拿到手的话，我倒也不介意再多走一点弯路……”"
+      ]
+    },
+    {
+      "paragraph": 395,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“不是这样的！”"
+      ]
+    },
+    {
+      "paragraph": 396,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "玛丽安突然一反常态，强硬地打断了魔女的发言。"
+      ]
+    },
+    {
+      "paragraph": 397,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“恰恰相反……这一次，我是来请求魔女大人不要插手……不要插手我接下来要做的事。”"
+      ]
+    },
+    {
+      "paragraph": 398,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "魔女诧异地看着玛丽安，又扭过头去看了看暗夜中灯火通明的圣殿，最终又把视线放在了眼前的少女身上。"
+      ]
+    },
+    {
+      "paragraph": 399,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“我早就叫她少给你吃点莫名其妙的东西……”"
+      ]
+    },
+    {
+      "paragraph": 400,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“我是认真的。”"
+      ]
+    },
+    {
+      "paragraph": 401,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“这不是认真就能解决的问题。”"
+      ]
+    },
+    {
+      "paragraph": 402,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“不只是为了解决问题。”"
+      ]
+    },
+    {
+      "paragraph": 403,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那难道就去制造问题吗？”"
+      ]
+    },
+    {
+      "paragraph": 404,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“就算制造问题也没关系。”"
+      ]
+    },
+    {
+      "paragraph": 405,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“那只是对你没有关系。”"
+      ]
+    },
+    {
+      "paragraph": 406,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“你不知道这对我有多重要。”"
+      ]
+    },
+    {
+      "paragraph": 407,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“是你不知道这对我有多重要。”"
+      ]
+    },
+    {
+      "paragraph": 408,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“我会给你想要的东西。”"
+      ]
+    },
+    {
+      "paragraph": 409,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你根本就不明白……”"
+      ]
+    },
+    {
+      "paragraph": 410,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "",
+      "segments": [
+        "两名少女之间爆发了一场无比迅速却又无比克制的对话，最终以一向咄咄逼人的魔女率先让步告终。"
+      ]
+    },
+    {
+      "paragraph": 411,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "魔女",
+      "segments": [
+        "“你不了解什么是坏人。”"
+      ]
+    },
+    {
+      "paragraph": 412,
+      "scene": "05.txt",
+      "location": "stars",
+      "figures": [
+        "marian",
+        "witch"
+      ],
+      "speaker": "玛丽安",
+      "segments": [
+        "“但我现在知道谁是好人了，对吗？”"
+      ]
+    }
+  ]
+}

@@ -13,15 +13,27 @@ const archive = path.join(cache, `WebGAL-${version}-web.zip`);
 fs.mkdirSync(cache,{recursive:true});
 if (!fs.existsSync(archive)) {
   console.log(`下载官方 WebGAL ${version}…`);
-  execFileSync('curl',['--location','--fail','--retry','2',`https://github.com/OpenWebGAL/WebGAL/releases/download/${version}/WebGAL-${version}-web.zip`,'--output',archive],{stdio:'inherit'});
+  const partial=archive+'.part';
+  try {
+    execFileSync('curl',['--location','--fail','--retry','2',`https://github.com/OpenWebGAL/WebGAL/releases/download/${version}/WebGAL-${version}-web.zip`,'--output',partial],{stdio:'inherit'});
+    if(createHash('sha256').update(fs.readFileSync(partial)).digest('hex')!==sha256) throw new Error('引擎下载不完整，请重新运行构建。');
+    fs.renameSync(partial,archive);
+  } finally { fs.rmSync(partial,{force:true}); }
 }
 const hash = createHash('sha256').update(fs.readFileSync(archive)).digest('hex');
 if (hash !== sha256) throw new Error('WebGAL 下载校验失败。请删除 .cache 中的压缩包后重试。');
 await import('./convert-story.mjs');
 await import('./enhance-scenes.mjs');
 await import('./make-audio.mjs');
+// Rebuild generated output cleanly, so removed/replaced figures do not survive.
+fs.rmSync('dist',{recursive:true,force:true});
 fs.mkdirSync('dist',{recursive:true});
-execFileSync('unzip',['-q','-o',archive,'assets/*','game/template/*','game/animation/*','webgal-serviceworker.js','webgal-engine.json','index.html','-x','*.gz','-d','dist']);
+if(process.platform==='win32') {
+  // Windows 10/11 ships bsdtar, which reads ZIP without a PowerShell script.
+  execFileSync('tar.exe',['-xf',archive,'-C','dist','--exclude=*.gz','assets','game/template','game/animation','webgal-serviceworker.js','webgal-engine.json','index.html'],{stdio:'inherit'});
+} else {
+  execFileSync('unzip',['-q','-o',archive,'assets/*','game/template/*','game/animation/*','webgal-serviceworker.js','webgal-engine.json','index.html','-x','*.gz','-d','dist']);
+}
 fs.cpSync('game','dist/game',{recursive:true});
 fs.rmSync('dist/game/scene/source-map.json',{force:true});
 fs.cpSync('web','dist',{recursive:true});

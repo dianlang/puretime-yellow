@@ -61,6 +61,9 @@
   cursor:pointer;
 }
 .puretime-orientation-button:active {transform:translateY(1px);}
+.puretime-orientation-button:disabled {opacity:.6;cursor:wait;}
+.puretime-orientation-status {font:14px/1.6 system-ui,sans-serif;margin:14px 0 0;color:#d8c9ac;}
+.puretime-orientation-status:empty {display:none;}
 body.puretime-portrait #root,
 body.puretime-portrait .html-body__title-enter,
 body.puretime-portrait #ebg {
