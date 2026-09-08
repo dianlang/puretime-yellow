@@ -74,7 +74,7 @@
     gate.setAttribute('aria-hidden', active ? 'false' : 'true');
   }
 
-  function enhance() {
+  function enhanceTitle() {
     if (knownTitle?.isConnected) return;
     const root = document.getElementById('root');
     if (!root) return;
@@ -117,12 +117,21 @@
     }
   }
 
+  function enhanceControlPanel() {
+    const auto = document.getElementById('Button_ControlPanel_auto');
+    const panel = auto?.parentElement;
+    if (!panel || panel.classList.contains('puretime-control-panel')) return;
+    panel.classList.add('puretime-control-panel');
+    for (const child of panel.children) child.classList.add('puretime-control-item');
+  }
+
   const scheduleEnhance = () => {
     if (queued) return;
     queued = true;
     requestAnimationFrame(() => {
       queued = false;
-      enhance();
+      enhanceTitle();
+      enhanceControlPanel();
     });
   };
 
