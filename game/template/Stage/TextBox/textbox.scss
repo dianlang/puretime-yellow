@@ -1,0 +1,18 @@
+.TextBox_main { z-index:3;position:absolute;min-height:400px;max-height:400px;bottom:0;left:0;right:0;padding:104px 155px 75px;box-sizing:border-box;display:flex;flex-flow:column;align-items:flex-start;color:#f2e9d8;font-weight:400;letter-spacing:.035em; }
+.TextBox_main_miniavatarOff {left:0;}
+.TextBox_Background { z-index:2;background:linear-gradient(180deg,rgba(17,24,29,.88),rgba(12,18,23,.98));border-top:2px solid rgba(218,179,105,.65); }
+.TextBox_showName { position:absolute;left:155px;top:25px;height:60px;line-height:60px;min-width:220px;padding:0 30px 0 0;font-size:85%;z-index:3; }
+.TextBox_ShowName_Background {z-index:2;background:transparent;border:0;}
+.TextBox_textElement_start {position:relative;animation:TextDelayShow 500ms ease-out forwards;opacity:0;}
+.TextBox_textElement_Settled {position:relative;opacity:1;}
+.outer {position:absolute;left:0;top:0;white-space:nowrap;color:#f1e9d8;z-index:2;}
+.inner {display:none;}
+.zhanwei {color:transparent;white-space:nowrap;}
+.outerName {position:absolute;left:0;top:0;color:#e5bb75;z-index:2;white-space:nowrap;}
+.innerName {display:none;}
+.text {overflow:hidden;}
+.readTextOuter {color:#d6d2c9;}
+.miniAvatarContainer {display:none;}
+.miniAvatarImg {max-width:100%;max-height:100%;}
+.nameContainer {position:absolute;left:2em;top:-3.5em;}
+@keyframes TextDelayShow { from {opacity:0;} to {opacity:1;} }

@@ -1,0 +1,10 @@
+Game_name:PureTime·黄;
+Game_key:PureTimeYellow1;
+Title_img:road.svg;
+Title_bgm:journey.wav;
+Game_Logo:;
+Enable_Appreciation:false;
+Default_Language:zh_CN;
+Show_panic:false;
+Max_line:3;
+Line_height:1.55;

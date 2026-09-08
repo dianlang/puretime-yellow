@@ -1,0 +1,3 @@
+/* Custom title and dialogue layout lives in game/template/. */
+:root { color-scheme: dark; }
+::selection { background:#bd924c; color:#111; }

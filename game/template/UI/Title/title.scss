@@ -1,0 +1,13 @@
+.Title_main {
+  --puretime-title: 1;
+  width:100%; height:100%; position:absolute; z-index:13;
+  &::before { content:"PureTime"; position:absolute; top:170px; left:180px; color:#f0e2c4; font-family:Georgia,serif; font-size:108px; letter-spacing:10px; pointer-events:none; }
+  &::after { content:"黄"; position:absolute; top:295px; left:172px; color:#e0b66b; font-family:"思源宋体",serif; font-size:260px; font-weight:400; line-height:1.2; pointer-events:none; }
+}
+.Title_buttonList { --puretime-column:1;position:absolute; top:695px; left:185px; display:flex; flex-direction:column; align-items:flex-start; gap:24px; font-family:"思源宋体",serif; }
+.Title_button { cursor:pointer; margin:0; padding:8px 0; transition:transform .2s,opacity .2s; &:hover {transform:translateX(14px);} &:last-child {display:none;} }
+.Title_button_text { display:inline-block; position:relative; font-size:47px; line-height:1.4; letter-spacing:10px; color:transparent; }
+.Title_button_text_outer { display:block; position:absolute; left:0; top:0; color:#f1e5ce; text-shadow:0 2px 12px #151b1e; white-space:nowrap; }
+.Title_button_text_inner { display:none; }
+.Title_button_disabled {opacity:.4;cursor:default;}
+.Title_backup_background {width:100%;height:100%;position:absolute;z-index:13;background:#1a2228;}

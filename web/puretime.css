@@ -1,0 +1,10 @@
+.title-enter__initial-background {background:#17212a url('./game/background/road.svg') center/cover!important;}
+.title-enter__white-background {background:linear-gradient(160deg,#17212aee,#17212a55)!important;}
+.title-enter-container__center-text {color:#ecd6ab!important;letter-spacing:.22em;font-size:52px;}
+.title-enter-container__link-to-github {color:#c1b397!important;font-family:Georgia,serif;opacity:.65;}
+.title-enter-container__link-to-github a {color:inherit!important;}
+.puretime-credit {position:absolute;left:190px;bottom:68px;color:#c7b898;font:28px Georgia,"Noto Serif CJK SC",serif;letter-spacing:3px;text-decoration:none;z-index:1;}
+.puretime-credit:hover {color:#f3ddb4;}
+.puretime-subtitle {position:absolute;top:628px;left:187px;color:#c5b28e;font:27px Georgia,serif;letter-spacing:8px;pointer-events:none;}
+[role="button"]:focus-visible,a:focus-visible {outline:3px solid #e0b66b;outline-offset:8px;}
+@media (prefers-reduced-motion:reduce) {*,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important;}}
