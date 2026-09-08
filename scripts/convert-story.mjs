@@ -24,14 +24,132 @@ assign('长老', [367]);
 assign('电台', [133,134,137,138,139,159,164,166]);
 
 // Static PNG figures currently available in the project.
-// When a visible speaker changes, give that figure a short foreground motion.
-// 玛丽安 and the remaining speakers are intentionally omitted until their own art exists.
 const figureBySpeaker = new Map([
   ['魔女', 'witch'],
   ['店员小姐', 'clerk'],
   ['酒保小姐', 'clerk'],
+  ['玛丽安', 'marian'],
   ['小花', 'flower']
 ]);
+
+function getFigureAt(index) {
+  return figureBySpeaker.get(speakers.get(index) || '');
+}
+
+// Score nearby dialogue partners. Existing on-screen partners get a bias so a single
+// aside does not cause the whole composition to reshuffle.
+function partnerScores(index, currentFigure, currentPair) {
+  const scores = new Map();
+  const radius = 8;
+  for (let d = 1; d <= radius; d++) {
+    for (const j of [index - d, index + d]) {
+      if (j < 0 || j >= paragraphs.length) continue;
+      const figure = getFigureAt(j);
+      if (!figure || figure === currentFigure) continue;
+      let weight = 1 / (1 + d);
+      if (j > index) weight *= 1.05;
+      if (currentPair.includes(figure)) weight *= 1.4;
+      scores.set(figure, (scores.get(figure) || 0) + weight);
+    }
+  }
+  return scores;
+}
+
+function isBriefInterjection(index, figure, currentPair) {
+  if (!figure || currentPair.length === 0 || currentPair.includes(figure)) return false;
+  let sameSpeakerCount = 0;
+  let pairPresence = 0;
+  for (let j = Math.max(0, index - 6); j <= Math.min(paragraphs.length - 1, index + 6); j++) {
+    const nearby = getFigureAt(j);
+    if (nearby === figure) sameSpeakerCount++;
+    if (nearby && currentPair.includes(nearby)) pairPresence++;
+  }
+  return sameSpeakerCount === 1 && pairPresence >= 2;
+}
+
+function chooseDialoguePair(index, currentPair) {
+  const currentFigure = getFigureAt(index);
+  if (!currentFigure) return currentPair;
+
+  // A one-line aside may remain off-screen if the current two-person exchange is clear.
+  if (isBriefInterjection(index, currentFigure, currentPair)) return currentPair;
+
+  const scores = partnerScores(index, currentFigure, currentPair);
+  const ranked = [...scores.entries()].sort((a,b) => b[1] - a[1]);
+  let partner = ranked[0]?.[0];
+
+  // Keep the established partner unless a new partner becomes clearly more relevant.
+  if (currentPair.includes(currentFigure)) {
+    const established = currentPair.find(f => f !== currentFigure);
+    if (established) {
+      const establishedScore = scores.get(established) || 0;
+      const bestScore = partner ? (scores.get(partner) || 0) : 0;
+      if (!partner || partner === established || bestScore < establishedScore * 1.7) {
+        partner = established;
+      }
+    }
+  }
+
+  return partner ? [currentFigure, partner] : [currentFigure];
+}
+
+function uniqueAvailable(figures) {
+  return [...new Set(figures)].filter(name => fs.existsSync(path.join(root, `game/figure/${name}.png`)));
+}
+
+// Two-person VN framing. Witch normally anchors the right side; the others prefer left.
+// When two non-witch characters talk, keep a stable left/right convention.
+function pairLayout(pair) {
+  const figures = uniqueAvailable(pair);
+  if (figures.length === 0) return { left:null, right:null };
+  if (figures.length === 1) {
+    return figures[0] === 'witch'
+      ? { left:null, right:figures[0] }
+      : { left:figures[0], right:null };
+  }
+
+  const a = figures[0], b = figures[1];
+  if (a === 'witch' || b === 'witch') {
+    const other = a === 'witch' ? b : a;
+    return { left:other, right:'witch' };
+  }
+  if (a === 'clerk' || b === 'clerk') {
+    const other = a === 'clerk' ? b : a;
+    return { left:'clerk', right:other };
+  }
+  if (a === 'flower' || b === 'flower') {
+    const other = a === 'flower' ? b : a;
+    return { left:'flower', right:other };
+  }
+  return { left:a, right:b };
+}
+
+function layoutPair(layout) {
+  return [layout.left, layout.right].filter(Boolean);
+}
+
+function sameLayout(a, b) {
+  return a.left === b.left && a.right === b.right;
+}
+
+function transitionPair(lines, currentLayout, desiredPair) {
+  const desired = pairLayout(desiredPair);
+  if (sameLayout(currentLayout, desired)) return desired;
+
+  if (currentLayout.left && currentLayout.left !== desired.left) {
+    lines.push('changeFigure:none -left -exit=exit-to-left -exitDuration=260 -next;');
+  }
+  if (currentLayout.right && currentLayout.right !== desired.right) {
+    lines.push('changeFigure:none -right -exit=exit-to-right -exitDuration=260 -next;');
+  }
+  if (desired.left && currentLayout.left !== desired.left) {
+    lines.push(`changeFigure:${desired.left}.png -left -enter=enter-from-left -enterDuration=420 -next;`);
+  }
+  if (desired.right && currentLayout.right !== desired.right) {
+    lines.push(`changeFigure:${desired.right}.png -right -enter=enter-from-right -enterDuration=420 -next;`);
+  }
+  return desired;
+}
 
 // Splitting only changes pagination; concatenating segments reproduces each paragraph exactly.
 export function paginate(text, limit = 76) {
@@ -56,14 +174,14 @@ function escape(text) {
   return text;
 }
 const sets = {
-  road: { bg:'road.svg', figures:['clerk','witch'], music:'journey.wav' },
-  cafe: { bg:'cafe.svg', figures:['flower','witch'], music:'memory.wav' },
-  parking: { bg:'cafe.svg', figures:['clerk','witch'], music:'memory.wav' },
-  store: { bg:'store.svg', figures:['clerk','witch'], music:'night.wav' },
-  camp: { bg:'road.svg', figures:['clerk','witch'], music:'journey.wav' },
-  station: { bg:'station.svg', figures:['clerk','witch'], music:'night.wav' },
-  room: { bg:'room.svg', figures:['clerk','witch'], music:'night.wav' },
-  stars: { bg:'stars.svg', figures:['witch'], music:'night.wav' }
+  road: { bg:'road.svg', music:'journey.wav' },
+  cafe: { bg:'cafe.svg', music:'memory.wav' },
+  parking: { bg:'cafe.svg', music:'memory.wav' },
+  store: { bg:'store.svg', music:'night.wav' },
+  camp: { bg:'road.svg', music:'journey.wav' },
+  station: { bg:'station.svg', music:'night.wav' },
+  room: { bg:'room.svg', music:'night.wav' },
+  stars: { bg:'stars.svg', music:'night.wav' }
 };
 const cues = new Map([[0,'road'],[26,'parking'],[45,'road'],[107,'store'],[206,'cafe'],[221,'road'],[225,'camp'],[322,'station'],[349,'cafe'],[366,'room'],[382,'stars']]);
 const chapters = [
@@ -79,33 +197,43 @@ const outdir = path.join(root, 'game/scene');
 fs.mkdirSync(outdir, {recursive:true});
 for (const [chapterIndex, chapter] of chapters.entries()) {
   const lines = [`; PureTime·黄 / ${chapter.title}`, `changeFigure:none -left -next;`, `changeFigure:none -right -next;`, `changeFigure:none -next;`, `changeBg:none -next;`, `intro:${chapter.title};`];
-  let activeFigures = [];
-  let activeTargets = new Map();
+  let activeLayout = { left:null, right:null };
   let previousSpeaker = '';
+
   for (let i = chapter.from; i <= chapter.to; i++) {
     if (cues.has(i)) {
       const set = sets[cues.get(i)];
-      lines.push('changeFigure:none -left -next;', 'changeFigure:none -right -next;', 'changeFigure:none -next;', `changeBg:${set.bg} -next;`, `bgm:${set.music} -volume=22 -enter=1000 -next;`);
-      activeFigures = set.figures;
-      activeTargets = new Map();
+      lines.push(
+        'changeFigure:none -left -next;',
+        'changeFigure:none -right -next;',
+        'changeFigure:none -next;',
+        `changeBg:${set.bg} -next;`,
+        `bgm:${set.music} -volume=22 -enter=1000 -next;`
+      );
+      activeLayout = { left:null, right:null };
       previousSpeaker = '';
-      // At the very beginning, let the unaccompanied narration establish the wasteland.
-      if (i !== 0) activeTargets = showFigures(lines, activeFigures);
     }
-    if (i === 14) {
-      activeTargets = showFigures(lines, activeFigures);
-      previousSpeaker = '';
-    }
+
     if ([91,132,171,300].includes(i)) lines.push('playEffect:tap.wav -volume=25 -next;');
     if ([26,206,349].includes(i)) lines.push('playEffect:chime.wav -volume=30 -next;');
+
     const segments = paginate(paragraphs[i]);
     if (segments.join('') !== paragraphs[i]) throw new Error(`第 ${i} 段有内容损失`);
     const speaker = speakers.get(i) || '';
-
-    // Give a visible character a restrained foreground motion when the speaker changes.
-    // -keep -next lets the 1s preset play while the dialogue is already appearing.
     const figure = figureBySpeaker.get(speaker);
-    const target = figure ? activeTargets.get(figure) : undefined;
+
+    // Narration keeps the current pair. Dialogue may establish or change a two-person shot.
+    if (figure) {
+      const desiredPair = chooseDialoguePair(i, layoutPair(activeLayout));
+      activeLayout = transitionPair(lines, activeLayout, desiredPair);
+    }
+
+    const target = figure
+      ? activeLayout.left === figure ? 'fig-left'
+      : activeLayout.right === figure ? 'fig-right'
+      : undefined
+      : undefined;
+
     if (speaker && speaker !== previousSpeaker && target) {
       lines.push(`setAnimation:move-front-and-back -target=${target} -keep -next;`);
     }
@@ -114,31 +242,10 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
     for (const segment of segments) lines.push(`${speaker}:${escape(segment)};`);
     report.push({paragraph:i, scene:chapter.file, speaker, segments});
   }
+
   if (chapterIndex < chapters.length - 1) lines.push(`changeScene:${chapters[chapterIndex+1].file};`);
   else lines.push('changeFigure:none -next;', 'changeFigure:none -right -next;', 'changeFigure:none -left -next;', 'changeBg:none -next;', 'bgm:none -enter=1500 -next;', 'intro:未完待续|本次阅读已到达现有原稿末尾;','end;');
   fs.writeFileSync(path.join(outdir, chapter.file), lines.join('\n')+'\n');
-}
-function showFigures(lines, figures) {
-  // Omit missing art rather than showing a broken image.
-  const available = figures.filter(name => fs.existsSync(path.join(root, `game/figure/${name}.png`)));
-  const targets = new Map();
-  available.forEach((figure, idx) => {
-    let pos = '';
-    let target = 'fig-center';
-    let enter = 'enter-from-bottom';
-    if (available.length > 1 && idx === 0) {
-      pos = ' -left';
-      target = 'fig-left';
-      enter = 'enter-from-left';
-    } else if (available.length > 1) {
-      pos = ' -right';
-      target = 'fig-right';
-      enter = 'enter-from-right';
-    }
-    lines.push(`changeFigure:${figure}.png${pos} -enter=${enter} -enterDuration=500 -next;`);
-    targets.set(figure, target);
-  });
-  return targets;
 }
 fs.writeFileSync(path.join(outdir,'source-map.json'), JSON.stringify({paragraphs:paragraphs.length, chapters, dialogue:report},null,2));
 console.log(`已转换 ${report.length} 个正文段落 / ${report.reduce((n,p)=>n+p.segments.length,0)} 页 / ${chapters.length} 幕。`);
