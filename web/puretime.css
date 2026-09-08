@@ -7,4 +7,56 @@
 .puretime-credit:hover {color:#f3ddb4;}
 .puretime-subtitle {position:absolute;top:628px;left:187px;color:#c5b28e;font:27px Georgia,serif;letter-spacing:8px;pointer-events:none;}
 [role="button"]:focus-visible,a:focus-visible {outline:3px solid #e0b66b;outline-offset:8px;}
-@media (prefers-reduced-motion:reduce) {*,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important;}}
+
+.puretime-orientation-gate {
+  position:fixed;
+  inset:0;
+  z-index:2147483647;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  padding:28px;
+  background:
+    linear-gradient(180deg,rgba(17,25,31,.42),rgba(17,25,31,.84)),
+    #17212a url('./game/background/road.svg') center/cover no-repeat;
+  color:#f1e5ce;
+  font-family:Georgia,"Noto Serif CJK SC","思源宋体",serif;
+  text-align:center;
+}
+.puretime-orientation-gate[hidden] {display:none!important;}
+.puretime-orientation-card {
+  width:min(88vw,560px);
+  padding:30px 26px 28px;
+  border:1px solid rgba(224,182,107,.45);
+  background:rgba(18,25,30,.78);
+  box-shadow:0 18px 60px rgba(0,0,0,.35);
+  backdrop-filter:blur(10px);
+}
+.puretime-orientation-mark {font-size:54px;line-height:1;margin-bottom:12px;transform:rotate(90deg);}
+.puretime-orientation-title {font-size:30px;letter-spacing:.12em;margin-bottom:10px;}
+.puretime-orientation-copy {font-size:16px;line-height:1.8;opacity:.78;margin:0 auto 20px;}
+.puretime-orientation-button {
+  appearance:none;
+  border:1px solid rgba(236,214,171,.72);
+  background:rgba(224,182,107,.12);
+  color:#f1e5ce;
+  padding:11px 18px;
+  font:16px/1.2 inherit;
+  letter-spacing:.08em;
+  cursor:pointer;
+}
+.puretime-orientation-button:active {transform:translateY(1px);}
+body.puretime-portrait #root,
+body.puretime-portrait .html-body__title-enter,
+body.puretime-portrait #ebg {
+  visibility:hidden!important;
+  pointer-events:none!important;
+}
+
+@media (orientation:portrait) and (pointer:coarse) {
+  #root,.html-body__title-enter,#ebg {visibility:hidden!important;pointer-events:none!important;}
+}
+@media (prefers-reduced-motion:reduce) {
+  *,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important;}
+}
