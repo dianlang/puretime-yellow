@@ -8,6 +8,20 @@
 .puretime-subtitle {position:absolute;top:628px;left:187px;color:#c5b28e;font:27px Georgia,serif;letter-spacing:8px;pointer-events:none;}
 [role="button"]:focus-visible,a:focus-visible {outline:3px solid #e0b66b;outline-offset:8px;}
 
+/* Gameplay controls should remain available without competing with the dialogue. */
+.puretime-control-panel {
+  opacity:.64!important;
+  transform:scale(.88)!important;
+  transform-origin:right bottom!important;
+  transition:opacity .18s ease,transform .18s ease!important;
+}
+.puretime-control-panel:hover,
+.puretime-control-panel:focus-within {
+  opacity:.94!important;
+}
+.puretime-control-item {transition:opacity .15s ease!important;}
+.puretime-control-panel:hover .puretime-control-item:not(:hover) {opacity:.82;}
+
 .puretime-orientation-gate {
   position:fixed;
   inset:0;
