@@ -23,6 +23,16 @@ assign('保安团', [342,343,344]);
 assign('长老', [367]);
 assign('电台', [133,134,137,138,139,159,164,166]);
 
+// Static PNG figures currently available in the project.
+// When a visible speaker changes, give that figure a short foreground motion.
+// 玛丽安 and the remaining speakers are intentionally omitted until their own art exists.
+const figureBySpeaker = new Map([
+  ['魔女', 'witch'],
+  ['店员小姐', 'clerk'],
+  ['酒保小姐', 'clerk'],
+  ['小花', 'flower']
+]);
+
 // Splitting only changes pagination; concatenating segments reproduces each paragraph exactly.
 export function paginate(text, limit = 76) {
   const out = [];
@@ -70,20 +80,37 @@ fs.mkdirSync(outdir, {recursive:true});
 for (const [chapterIndex, chapter] of chapters.entries()) {
   const lines = [`; PureTime·黄 / ${chapter.title}`, `changeFigure:none -left -next;`, `changeFigure:none -right -next;`, `changeFigure:none -next;`, `changeBg:none -next;`, `intro:${chapter.title};`];
   let activeFigures = [];
+  let activeTargets = new Map();
+  let previousSpeaker = '';
   for (let i = chapter.from; i <= chapter.to; i++) {
     if (cues.has(i)) {
       const set = sets[cues.get(i)];
       lines.push('changeFigure:none -left -next;', 'changeFigure:none -right -next;', 'changeFigure:none -next;', `changeBg:${set.bg} -next;`, `bgm:${set.music} -volume=22 -enter=1000 -next;`);
       activeFigures = set.figures;
+      activeTargets = new Map();
+      previousSpeaker = '';
       // At the very beginning, let the unaccompanied narration establish the wasteland.
-      if (i !== 0) showFigures(lines, activeFigures);
+      if (i !== 0) activeTargets = showFigures(lines, activeFigures);
     }
-    if (i === 14) showFigures(lines, activeFigures);
+    if (i === 14) {
+      activeTargets = showFigures(lines, activeFigures);
+      previousSpeaker = '';
+    }
     if ([91,132,171,300].includes(i)) lines.push('playEffect:tap.wav -volume=25 -next;');
     if ([26,206,349].includes(i)) lines.push('playEffect:chime.wav -volume=30 -next;');
     const segments = paginate(paragraphs[i]);
     if (segments.join('') !== paragraphs[i]) throw new Error(`第 ${i} 段有内容损失`);
     const speaker = speakers.get(i) || '';
+
+    // Give a visible character a restrained foreground motion when the speaker changes.
+    // -keep -next lets the 1s preset play while the dialogue is already appearing.
+    const figure = figureBySpeaker.get(speaker);
+    const target = figure ? activeTargets.get(figure) : undefined;
+    if (speaker && speaker !== previousSpeaker && target) {
+      lines.push(`setAnimation:move-front-and-back -target=${target} -keep -next;`);
+    }
+    previousSpeaker = speaker;
+
     for (const segment of segments) lines.push(`${speaker}:${escape(segment)};`);
     report.push({paragraph:i, scene:chapter.file, speaker, segments});
   }
@@ -92,12 +119,26 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
   fs.writeFileSync(path.join(outdir, chapter.file), lines.join('\n')+'\n');
 }
 function showFigures(lines, figures) {
-  // Omit missing art rather than showing a broken image; adding witch.png enables it.
-  figures = figures.filter(name => fs.existsSync(path.join(root, `game/figure/${name}.png`)));
-  figures.forEach((figure, idx) => {
-    const pos = figures.length === 1 ? '' : idx === 0 ? ' -left' : ' -right';
-    lines.push(`changeFigure:${figure}.png${pos} -next;`);
+  // Omit missing art rather than showing a broken image.
+  const available = figures.filter(name => fs.existsSync(path.join(root, `game/figure/${name}.png`)));
+  const targets = new Map();
+  available.forEach((figure, idx) => {
+    let pos = '';
+    let target = 'fig-center';
+    let enter = 'enter-from-bottom';
+    if (available.length > 1 && idx === 0) {
+      pos = ' -left';
+      target = 'fig-left';
+      enter = 'enter-from-left';
+    } else if (available.length > 1) {
+      pos = ' -right';
+      target = 'fig-right';
+      enter = 'enter-from-right';
+    }
+    lines.push(`changeFigure:${figure}.png${pos} -enter=${enter} -enterDuration=500 -next;`);
+    targets.set(figure, target);
   });
+  return targets;
 }
 fs.writeFileSync(path.join(outdir,'source-map.json'), JSON.stringify({paragraphs:paragraphs.length, chapters, dialogue:report},null,2));
 console.log(`已转换 ${report.length} 个正文段落 / ${report.reduce((n,p)=>n+p.segments.length,0)} 页 / ${chapters.length} 幕。`);
