@@ -49,15 +49,19 @@ function normalizeFigureLine(line, figure) {
   const side = line.includes(' -left') ? 'left' : line.includes(' -right') ? 'right' : null;
   if (!side || !figure) return line;
 
-  // Let the normalized size be part of the entrance itself. The custom transform
-  // also supplies the fade-in, so a second enter animation would fight the focus
-  // transform on the same target.
+  // Bring the two speaking positions slightly inward from WebGAL's stock anchors.
+  // Coordinates use the engine's 2560×1440 design space.
+  const x = side === 'left' ? 700 : 1860;
   const transform = JSON.stringify({
+    position: { x },
     scale: { x: baseScale(figure), y: baseScale(figure) },
     alpha: 1,
     saturation: 1,
     contrast: 1
   });
+
+  // Let size and position be part of the entrance itself. The custom transform
+  // supplies a restrained fade-in, avoiding competing animations on the same target.
   return `changeFigure:${figure}.png -${side} -transform=${transform} -duration=300;`;
 }
 
@@ -123,4 +127,4 @@ for (const file of chapterFiles) {
   fs.writeFileSync(fullPath, out.join('\n'));
 }
 
-console.log('已应用立绘尺寸统一与说话人聚焦演出。');
+console.log('已应用立绘尺寸统一、内收构图与说话人聚焦演出。');
