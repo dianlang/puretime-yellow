@@ -18,6 +18,7 @@ if (!fs.existsSync(archive)) {
 const hash = createHash('sha256').update(fs.readFileSync(archive)).digest('hex');
 if (hash !== sha256) throw new Error('WebGAL 下载校验失败。请删除 .cache 中的压缩包后重试。');
 await import('./convert-story.mjs');
+await import('./enhance-scenes.mjs');
 await import('./make-audio.mjs');
 fs.mkdirSync('dist',{recursive:true});
 execFileSync('unzip',['-q','-o',archive,'assets/*','game/template/*','game/animation/*','webgal-serviceworker.js','webgal-engine.json','index.html','-x','*.gz','-d','dist']);
