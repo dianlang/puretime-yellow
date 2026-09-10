@@ -1,11 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { presentation, figureAssets, pngSize } from './figure-assets.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sceneDir = path.join(root, 'game/scene');
 
-const presentation=JSON.parse(fs.readFileSync(path.join(root,'game/presentation.json'),'utf8'));
 const figureBySpeaker=new Map(Object.entries(presentation.characters).map(([id,p])=>[p.speaker,id]));
 
 // Visual normalization for the current PNG set. The source drawings have very
@@ -36,7 +36,7 @@ function transformLine(figure, target, active, neutral=false, duration = 180) {
   return `setTransform:${JSON.stringify(transformFor(figure, active,neutral))} -target=${target} -duration=${duration} -next;`;
 }
 
-function normalizeFigureLine(line, figure) {
+function normalizeFigureLine(line, file, figure, expressionChange, active, neutral) {
   const side = line.includes(' -left') ? 'left' : line.includes(' -right') ? 'right' : null;
   if (!side || !figure) return line;
 
@@ -44,25 +44,20 @@ function normalizeFigureLine(line, figure) {
   // Coordinates use the engine's 2560×1440 design space.
   // WebGAL 4.6.4 fits a PNG to the stage, then anchors -left/-right at the
   // fitted half-width. Transform coordinates are OFFSETS from that anchor.
-  const png=fs.readFileSync(path.join(root,`game/figure/${figure}.png`));
-  if (png.subarray(0,8).toString('hex') !== '89504e470d0a1a0a') throw new Error(`不是 PNG：${figure}`);
-  const width=png.readUInt32BE(16), height=png.readUInt32BE(20);
+  const { width, height } = pngSize(file);
   const stage=presentation.stage;
   const fittedWidth=width*Math.min(stage.width/width,stage.height/height);
   const anchor=side==='left' ? fittedWidth/2 : stage.width-fittedWidth/2;
   const x=Number(((side==='left'?stage.leftX:stage.rightX)-anchor).toFixed(3));
   const transform = JSON.stringify({
     position: { x, y:profile[figure]?.y ?? 0 },
-    scale: { x: baseScale(figure), y: baseScale(figure) },
-    alpha: 1,
-    brightness: 1,
-    saturation: 1,
-    contrast: 1
+    ...transformFor(figure, active, neutral)
   });
 
   // Let size and position be part of the entrance itself. The custom transform
   // supplies a restrained fade-in, avoiding competing animations on the same target.
-  return `changeFigure:${figure}.png -${side} -transform=${transform} -duration=300 -next;`;
+  const timing = expressionChange ? '-duration=0 -enterDuration=0 -exitDuration=450' : '-duration=300';
+  return `changeFigure:${file} -${side} -transform=${transform} ${timing} -next;`;
 }
 
 for (const file of chapterFiles) {
@@ -73,9 +68,10 @@ for (const file of chapterFiles) {
   const out = [];
   let left = null;
   let right = null;
-  let previousSpeaker = '';
+  const currentImages = { left: null, right: null };
+  let previousSpeaker = null;
 
-  for (const originalLine of source) {
+  for (const [index, originalLine] of source.entries()) {
     let line = originalLine;
 
     // The previous build added this stock motion. Focus is now handled by a
@@ -94,16 +90,32 @@ for (const file of chapterFiles) {
         if (content === 'none') {
           if (side === 'left') left = null;
           if (side === 'right') right = null;
-          previousSpeaker = '';
+          currentImages[side] = null;
+          previousSpeaker = null;
           out.push(line);
           continue;
         }
 
-        const figure = path.parse(content).name;
+        const asset = figureAssets.get(content);
+        if (!asset) throw new Error(`未配置立绘身份：${content}`);
+        const figure = asset.character;
+        const expressionChange = (side === 'left' ? left : right) === figure && currentImages[side] !== content;
         if (side === 'left') left = figure;
         if (side === 'right') right = figure;
-        previousSpeaker = '';
-        out.push(normalizeFigureLine(line, figure));
+        // Replacing the PNG must preserve the upcoming line's focus state, even
+        // when the character is only listening or reacting during narration.
+        const nextDialogue = source.slice(index + 1).find(text => text.startsWith(':') || speakerPattern.test(text));
+        const nextFigure = figureBySpeaker.get(speakerPattern.exec(nextDialogue ?? '')?.[1]);
+        const neutral = !nextFigure || ![left, right].includes(nextFigure);
+        previousSpeaker = null;
+        if (expressionChange) {
+          // WebGAL 4.6.4 snapshots the OLD image's exit settings before loading
+          // the replacement. Update that image first (same path/id: no entrance),
+          // so its default 450 ms fade cannot overlap the new facial expression.
+          out.push(`changeFigure:${currentImages[side]} -${side} -duration=0 -enterDuration=0 -exitDuration=0 -next;`);
+        }
+        out.push(normalizeFigureLine(line, content, figure, expressionChange, nextFigure === figure, neutral));
+        currentImages[side] = content;
         continue;
       }
     }

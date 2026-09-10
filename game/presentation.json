@@ -1,7 +1,15 @@
 {
   "stage": { "width": 2560, "height": 1440, "leftX": 700, "rightX": 1860 },
   "characters": {
-    "witch": { "speaker": "魔女", "scale": 0.82, "y": 0 },
+    "witch": {
+      "speaker": "魔女", "scale": 0.82, "y": 0,
+      "expressions": {
+        "neutral": "witch.png",
+        "happy": "witch_happy.png",
+        "surprise": "witch_surprise.png",
+        "angry": "witch-angry.png"
+      }
+    },
     "clerk": { "speaker": "店员小姐", "scale": 0.92, "y": 0 },
     "marian": { "speaker": "玛丽安", "scale": 1.10, "y": 100 },
     "flower": { "speaker": "小花", "scale": 0.95, "y": 0 }

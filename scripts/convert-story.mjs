@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { presentation, figureFile } from './figure-assets.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const manuscript = path.join(root, 'source/original.txt');
@@ -23,7 +24,22 @@ assign('保安团', [342,343,344]);
 assign('长老', [367]);
 assign('电台', [133,134,137,138,139,159,164,166]);
 
-const presentation = JSON.parse(fs.readFileSync(path.join(root,'game/presentation.json'),'utf8'));
+const expressionCues = new Map();
+const expressionConfig = JSON.parse(fs.readFileSync(path.join(root, 'game/expressions.json'), 'utf8'));
+for (const cue of expressionConfig.cues) {
+  const { paragraph, character, expression, quote } = cue;
+  if (!Number.isInteger(paragraph) || !paragraphs[paragraph] || /^（\d）$/.test(paragraphs[paragraph])) {
+    throw new Error(`表情段落不存在：${paragraph}`);
+  }
+  if (typeof quote !== 'string' || !quote || !paragraphs[paragraph].includes(quote)) {
+    throw new Error(`表情引文与原稿第 ${paragraph} 段不符，请检查索引。`);
+  }
+  figureFile(character, expression);
+  const atParagraph = expressionCues.get(paragraph) ?? {};
+  if (Object.hasOwn(atParagraph, character)) throw new Error(`重复表情标注：${paragraph} / ${character}`);
+  atParagraph[character] = expression;
+  expressionCues.set(paragraph, atParagraph);
+}
 // 酒保小姐与店员小姐是不同角色；没有立绘的说话人保留画外音。
 const figureBySpeaker = new Map(Object.entries(presentation.characters).map(([id,p])=>[p.speaker,id]));
 let shotContext;
@@ -92,7 +108,7 @@ function chooseDialoguePair(index, currentPair) {
 }
 
 function uniqueAvailable(figures) {
-  return [...new Set(figures)].filter(name => fs.existsSync(path.join(root, `game/figure/${name}.png`)));
+  return [...new Set(figures)].filter(name => fs.existsSync(path.join(root, 'game/figure', figureFile(name))));
 }
 
 // Two-person VN framing. Witch normally anchors the right side; the others prefer left.
@@ -126,25 +142,23 @@ function layoutPair(layout) {
   return [layout.left, layout.right].filter(Boolean);
 }
 
-function sameLayout(a, b) {
-  return a.left === b.left && a.right === b.right;
-}
-
-function transitionPair(lines, currentLayout, desiredPair) {
+function transitionPair(lines, currentLayout, desiredPair, expressions, currentImages) {
   const desired = pairLayout(desiredPair);
-  if (sameLayout(currentLayout, desired)) return desired;
-
-  if (currentLayout.left && !desired.left) {
-    lines.push('changeFigure:none -left -exit=exit-to-left -exitDuration=260 -next;');
-  }
-  if (currentLayout.right && !desired.right) {
-    lines.push('changeFigure:none -right -exit=exit-to-right -exitDuration=260 -next;');
-  }
-  if (desired.left && currentLayout.left !== desired.left) {
-    lines.push(`changeFigure:${desired.left}.png -left -enter=enter-from-left -enterDuration=420 -next;`);
-  }
-  if (desired.right && currentLayout.right !== desired.right) {
-    lines.push(`changeFigure:${desired.right}.png -right -enter=enter-from-right -enterDuration=420 -next;`);
+  for (const side of ['left', 'right']) {
+    const character = desired[side];
+    if (!character) {
+      if (currentLayout[side]) lines.push(`changeFigure:none -${side} -exit=exit-to-${side} -exitDuration=260 -next;`);
+      currentImages[side] = null;
+      continue;
+    }
+    const file = figureFile(character, expressions[character]);
+    if (currentLayout[side] !== character) {
+      lines.push(`changeFigure:${file} -${side} -enter=enter-from-${side} -enterDuration=420 -next;`);
+    } else if (currentImages[side] !== file) {
+      // Same character: replace the expression without moving them off/on stage.
+      lines.push(`changeFigure:${file} -${side} -duration=0 -next;`);
+    }
+    currentImages[side] = file;
   }
   return desired;
 }
@@ -196,6 +210,8 @@ fs.mkdirSync(outdir, {recursive:true});
 for (const [chapterIndex, chapter] of chapters.entries()) {
   const lines = [`; PureTime·黄 / ${chapter.title}`, `changeFigure:none -left -next;`, `changeFigure:none -right -next;`, `changeFigure:none -next;`, `changeBg:none -next;`, `intro:${chapter.title};`];
   let activeLayout = { left:null, right:null };
+  let activeImages = { left:null, right:null };
+  let expressions = {};
   let previousSpeaker = '';
   let location = '';
 
@@ -213,6 +229,8 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
         `bgm:${set.music} -volume=22 -enter=1000 -next;`
       );
       activeLayout = { left:null, right:null };
+      activeImages = { left:null, right:null };
+      expressions = {};
       previousSpeaker = '';
     }
 
@@ -223,12 +241,11 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
     if (segments.join('') !== paragraphs[i]) throw new Error(`第 ${i} 段有内容损失`);
     const speaker = speakers.get(i) || '';
     const figure = getFigureAt(i);
+    Object.assign(expressions, expressionCues.get(i));
 
     // Narration keeps the current pair. Dialogue may establish or change a two-person shot.
-    if (figure) {
-      const desiredPair = chooseDialoguePair(i, layoutPair(activeLayout));
-      activeLayout = transitionPair(lines, activeLayout, desiredPair);
-    }
+    const desiredPair = figure ? chooseDialoguePair(i, layoutPair(activeLayout)) : layoutPair(activeLayout);
+    activeLayout = transitionPair(lines, activeLayout, desiredPair, expressions, activeImages);
 
     const target = figure
       ? activeLayout.left === figure ? 'fig-left'
@@ -242,7 +259,8 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
     previousSpeaker = speaker;
 
     for (const segment of segments) lines.push(`${speaker}:${escape(segment)};`);
-    report.push({paragraph:i, scene:chapter.file, location, figures:layoutPair(activeLayout), speaker, segments});
+    report.push({paragraph:i, scene:chapter.file, location, figures:layoutPair(activeLayout),
+      expressions:Object.fromEntries(layoutPair(activeLayout).map(character=>[character, expressions[character] ?? 'neutral'])), speaker, segments});
   }
 
   if (chapterIndex < chapters.length - 1) lines.push(`changeScene:${chapters[chapterIndex+1].file};`);
