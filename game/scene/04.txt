@@ -185,4 +185,5 @@ setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":
 setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
 :强硬地牵起了玛丽安的手，店员小姐拉着她走出了这个闭塞的房间，向休息站宽阔的广场奔去。只有依旧捏着鼻子的魔女小姐，仍旧嫌恶地打量着这个破旧的房间，;
 :仿佛从中看到了什么异样一般皱紧了眉头。;
+callScene:side/supper.txt;
 changeScene:05.txt;

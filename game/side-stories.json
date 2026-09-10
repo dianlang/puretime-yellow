@@ -1,0 +1,138 @@
+{
+  "choices": [
+    {
+      "id": "notebook", "title": "车斗里的问题", "afterParagraph": 105, "quote": "奶奶的东西", "variable": "pt_notebook",
+      "cast": ["marian", "witch"],
+      "prompt": "去往46号休息站的方向已经定下。玛丽安扶住车斗边缘，却还有一句话没有说出口。",
+      "options": [
+        { "id": "ask", "label": "问她为什么这么在意笔记", "value": 1, "lines": [
+          { "speaker": "玛丽安", "text": "“您在意的是奶奶，还是她记下来的那些故事？”" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“你希望我回答哪一个？”" },
+          { "speaker": "玛丽安", "text": "“我想听真的那个。”" },
+          { "speaker": "魔女", "expression": "surprise", "text": "“……胆子倒是比刚才大了。”" },
+          { "speaker": "", "text": "魔女用手指压住帽檐，过了一会儿才重新看向前方。" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“故事。不过，如果它们只是一堆没人在意的字，你也不会记到现在吧。”" },
+          { "speaker": "玛丽安", "text": "“那拿到以后，请让我也看一看。”" },
+          { "speaker": "魔女", "text": "“先找到再说。问题问得再好，也不能让路变短。”" },
+          { "speaker": "", "text": "她没有答应，也没有拒绝。玛丽安把这个尚未得到的回答记在了心里。" }
+        ] },
+        { "id": "remember", "label": "说起奶奶讲故事时的样子", "value": 2, "lines": [
+          { "speaker": "玛丽安", "text": "“奶奶给我讲那些地方的时候，我总是先看她的脸。”" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“她脸上画着地图？”" },
+          { "speaker": "玛丽安", "text": "“不是。听不懂的地方，只要看她的样子，就知道该高兴还是害怕。”" },
+          { "speaker": "", "text": "魔女原本已经准备好的挖苦停在了嘴边。" },
+          { "speaker": "魔女", "expression": "happy", "text": "“那你记住的，倒不全是纸上的东西。”" },
+          { "speaker": "玛丽安", "text": "“嗯。所以，我想再看一次。”" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“……坐稳。别在找到那本笔记之前先掉下车。”" },
+          { "speaker": "", "text": "玛丽安依言抓紧了车斗。这一次，魔女没有催她结束话题。" }
+        ] },
+        { "id": "quiet", "label": "暂时不问，记住回去的方向", "value": 0, "lines": [
+          { "speaker": "", "text": "玛丽安把问题留在了心里。先回去，先亲眼看看——她望着向后退去的黄沙，默默重复了一遍目的地。" }
+        ] }
+      ]
+    },
+    {
+      "id": "truce", "title": "便利店的小小停战", "afterParagraph": 174, "quote": "日常相处时行为模式", "variable": "pt_truce",
+      "cast": ["marian", "witch"],
+      "prompt": "餐叉终于安静下来。隔着桌面，玛丽安察觉到魔女又一次移开了视线。",
+      "options": [
+        { "id": "napkin", "label": "递过去一张纸巾，先停战", "value": 1, "lines": [
+          { "speaker": "", "text": "玛丽安抽出一张纸巾，轻轻推到魔女的餐盒旁边。" },
+          { "speaker": "魔女", "expression": "angry", "text": "“干什么？我又没有哭。”" },
+          { "speaker": "玛丽安", "text": "“是给餐叉的。”" },
+          { "speaker": "", "text": "魔女看了看餐叉，又看了看那张纸巾，最后把它对折了一次。" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“你不会以为这样就算你赢了吧。”" },
+          { "speaker": "玛丽安", "text": "“那就先不分谁赢。”" },
+          { "speaker": "魔女", "expression": "happy", "text": "“……倒是会挑省事的办法。”" },
+          { "speaker": "", "text": "她用纸巾擦净了餐叉，没有再把刚才的争执续下去。" }
+        ] },
+        { "id": "question", "label": "问她为什么一定要问到底", "value": 2, "lines": [
+          { "speaker": "玛丽安", "text": "“您问乐园的那些事，是觉得它不存在，还是也想知道它在哪里？”" },
+          { "speaker": "魔女", "expression": "surprise", "text": "“谁教你这样问话的？”" },
+          { "speaker": "玛丽安", "text": "“刚才，您一直这样问我。”" },
+          { "speaker": "", "text": "魔女把餐叉放下。她似乎想立刻反驳，却先抿住了嘴。" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“不肯把问题问到底的话，谁都可以拿一个漂亮名字糊弄你。”" },
+          { "speaker": "玛丽安", "text": "“那我也可以继续问您吗？”" },
+          { "speaker": "魔女", "expression": "angry", "text": "“可以问。不代表我每次都得答。”" },
+          { "speaker": "", "text": "玛丽安点点头，认真地记住了这条并不对等、却确实存在的约定。" }
+        ] },
+        { "id": "quiet", "label": "收好餐叉，让这件事过去", "value": 0, "lines": [
+          { "speaker": "", "text": "玛丽安低头收好餐盒。还有很多事想问，但现在，能安静坐上一会儿也很好。" }
+        ] }
+      ]
+    },
+    {
+      "id": "supper", "title": "门外的一小段路", "afterParagraph": 380, "quote": "向休息站宽阔的广场奔去", "variable": "pt_supper",
+      "cast": ["clerk", "marian"], "background": "station.svg",
+      "prompt": "离开地下室后，店员小姐放慢脚步，仍旧牵着玛丽安。通往食堂的路就在前面。",
+      "options": [
+        { "id": "help", "label": "提出帮她准备晚饭", "value": 1, "lines": [
+          { "speaker": "玛丽安", "text": "“晚饭……我也想帮忙。”" },
+          { "speaker": "店员小姐", "text": "“那就请你帮我拿碗吧。拿得稳的那一种忙。”" },
+          { "speaker": "玛丽安", "text": "“只有这样就可以了吗？”" },
+          { "speaker": "店员小姐", "text": "“一个人只有两只手。有人替我拿着碗，我就可以少跑一趟呀。”" },
+          { "speaker": "", "text": "到了食堂，玛丽安小心地接过碗，把它们一只一只摆好。" },
+          { "speaker": "玛丽安", "text": "“魔女大人的那一份也要带回去吗？”" },
+          { "speaker": "店员小姐", "text": "“当然。捏着鼻子可不算吃过饭。”" },
+          { "speaker": "", "text": "玛丽安终于笑了一下。至少眼前这一件小事，她确实帮上了忙。" }
+        ] },
+        { "id": "confide", "label": "告诉她，回到这里反而有些害怕", "value": 2, "lines": [
+          { "speaker": "玛丽安", "text": "“这里明明是我住过的地方……可我不知道回来以后该做什么。”" },
+          { "speaker": "店员小姐", "text": "“那先吃晚饭？”" },
+          { "speaker": "玛丽安", "text": "“我不是说这个……”" },
+          { "speaker": "店员小姐", "text": "“我知道呀。可是害怕的时候，也不用把今晚所有的事一下子想完。”" },
+          { "speaker": "", "text": "她没有松开玛丽安的手，只把脚步又放慢了一点。" },
+          { "speaker": "玛丽安", "text": "“如果有件事，我想自己去做呢？”" },
+          { "speaker": "店员小姐", "text": "“那就告诉我们。自己去做，和谁也不告诉，可以是两件事。”" },
+          { "speaker": "", "text": "玛丽安没有立刻回答，但终于不再只盯着脚边的地面。" }
+        ] },
+        { "id": "quiet", "label": "握住她的手，先一起去吃饭", "value": 0, "lines": [
+          { "speaker": "", "text": "玛丽安轻轻回握了一下。店员小姐没有追问，牵着她继续向有灯光的地方走去。" }
+        ] }
+      ]
+    }
+  ],
+  "callbacks": [
+    {
+      "id": "supper-memory", "afterParagraph": 384, "quote": "给您送晚餐", "cast": ["marian", "witch"],
+      "variants": [
+        { "id": "help", "when": { "variable": "pt_supper", "equals": 1 }, "lines": [
+          { "speaker": "魔女", "expression": "neutral", "text": "“听说你还帮她拿了碗？她连这个都要报告一遍。”" },
+          { "speaker": "玛丽安", "text": "“我也想做一点能做的事。”" },
+          { "speaker": "魔女", "text": "“……先从拿稳开始，倒也没什么不好。”" }
+        ] },
+        { "id": "confide", "when": { "variable": "pt_supper", "equals": 2 }, "lines": [
+          { "speaker": "", "text": "玛丽安想起去食堂时，店员小姐一直没有松开的手。自己去做，和谁也不告诉，可以是两件事。" },
+          { "speaker": "", "text": "她把原本准备转身离开的那只脚收了回来。还有一些话，今晚应该说清楚。" }
+        ] }
+      ]
+    },
+    {
+      "id": "night-memory", "afterParagraph": 394, "quote": "再多走一点弯路", "cast": ["marian", "witch"],
+      "variants": [
+        { "id": "truce", "when": { "variable": "pt_truce", "equals": 1 }, "lines": [
+          { "speaker": "玛丽安", "text": "“这次也可以先不分谁赢吗？”" },
+          { "speaker": "魔女", "expression": "surprise", "text": "“你还惦记着那张纸巾？”" },
+          { "speaker": "玛丽安", "text": "“我是惦记着，您最后听完了。”" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“……那就说。别又把自己说得不敢开口。”" }
+        ] },
+        { "id": "grandmother", "when": { "variable": "pt_notebook", "equals": 2 }, "lines": [
+          { "speaker": "", "text": "玛丽安又一次看向魔女的脸，就像在车斗里说起奶奶时那样。" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“我脸上也没有写着答案。”" },
+          { "speaker": "玛丽安", "text": "“我知道。所以这次，我想自己把话说清楚。”" },
+          { "speaker": "", "text": "魔女微微抬起了下巴，等着她继续。" }
+        ] },
+        { "id": "question", "when": { "variable": "pt_truce", "equals": 2 }, "lines": [
+          { "speaker": "玛丽安", "text": "“您说过，我可以继续问。”" },
+          { "speaker": "魔女", "expression": "angry", "text": "“后半句是不代表我每次都得答。你倒很会只记一半。”" },
+          { "speaker": "玛丽安", "text": "“那这一次，我先说我的答案。”" }
+        ] },
+        { "id": "notebook", "when": { "variable": "pt_notebook", "equals": 1 }, "lines": [
+          { "speaker": "", "text": "去往46号休息站的路上，玛丽安问过魔女想要什么。如今轮到她说明，自己想要的究竟是什么了。" },
+          { "speaker": "玛丽安", "text": "“这一次，也请让我说真的那个。”" },
+          { "speaker": "魔女", "expression": "neutral", "text": "“……我在听。”" }
+        ] }
+      ]
+    }
+  ]
+}

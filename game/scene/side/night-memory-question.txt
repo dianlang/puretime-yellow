@@ -1,0 +1,17 @@
+; 新增可选支线：night-memory-question
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
+玛丽安:“您说过，我可以继续问。”;
+changeFigure:witch.png -right -duration=0 -enterDuration=0 -exitDuration=0 -next;
+changeFigure:witch-angry.png -right -transform={"position":{"x":-137.801,"y":0},"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=0 -enterDuration=0 -exitDuration=450 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+魔女:“后半句是不代表我每次都得答。你倒很会只记一半。”;
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
+玛丽安:“那这一次，我先说我的答案。”;
+changeFigure:witch-angry.png -right -duration=0 -enterDuration=0 -exitDuration=0 -next;
+changeFigure:witch.png -right -transform={"position":{"x":-137.801,"y":0},"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=0 -enterDuration=0 -exitDuration=450 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

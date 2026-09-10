@@ -1,0 +1,22 @@
+; 新增可选支线：门外的一小段路
+changeFigure:marian.png -right -transform={"position":{"x":-123.795,"y":100},"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=300 -next;
+changeBg:station.svg -next;
+setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:离开地下室后，店员小姐放慢脚步，仍旧牵着玛丽安。通往食堂的路就在前面。;
+choose:提出帮她准备晚饭:help|告诉她，回到这里反而有些害怕:confide|握住她的手，先一起去吃饭:quiet;
+label:help;
+callScene:side/supper-help.txt;
+jumpLabel:finish;
+label:confide;
+callScene:side/supper-confide.txt;
+jumpLabel:finish;
+label:quiet;
+callScene:side/supper-quiet.txt;
+jumpLabel:finish;
+label:finish;
+changeFigure:witch.png -right -transform={"position":{"x":-137.801,"y":0},"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=300 -next;
+setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+changeBg:room.svg -next;
+return;

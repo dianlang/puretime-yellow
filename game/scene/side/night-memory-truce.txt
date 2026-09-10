@@ -1,0 +1,20 @@
+; 新增可选支线：night-memory-truce
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
+玛丽安:“这次也可以先不分谁赢吗？”;
+changeFigure:witch.png -right -duration=0 -enterDuration=0 -exitDuration=0 -next;
+changeFigure:witch_surprise.png -right -transform={"position":{"x":-137.801,"y":0},"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=0 -enterDuration=0 -exitDuration=450 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+魔女:“你还惦记着那张纸巾？”;
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
+玛丽安:“我是惦记着，您最后听完了。”;
+changeFigure:witch_surprise.png -right -duration=0 -enterDuration=0 -exitDuration=0 -next;
+changeFigure:witch.png -right -transform={"position":{"x":-137.801,"y":0},"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=0 -enterDuration=0 -exitDuration=450 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+魔女:“……那就说。别又把自己说得不敢开口。”;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

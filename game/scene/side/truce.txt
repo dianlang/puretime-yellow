@@ -1,0 +1,20 @@
+; 新增可选支线：便利店的小小停战
+changeFigure:marian.png -left -transform={"position":{"x":123.795,"y":100},"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=300 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:餐叉终于安静下来。隔着桌面，玛丽安察觉到魔女又一次移开了视线。;
+choose:递过去一张纸巾，先停战:napkin|问她为什么一定要问到底:question|收好餐叉，让这件事过去:quiet;
+label:napkin;
+callScene:side/truce-napkin.txt;
+jumpLabel:finish;
+label:question;
+callScene:side/truce-question.txt;
+jumpLabel:finish;
+label:quiet;
+callScene:side/truce-quiet.txt;
+jumpLabel:finish;
+label:finish;
+changeFigure:clerk.png -left -transform={"position":{"x":123.795,"y":0},"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=300 -next;
+setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

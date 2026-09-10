@@ -1,0 +1,16 @@
+; 新增可选支线：night-memory-grandmother
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:玛丽安又一次看向魔女的脸，就像在车斗里说起奶奶时那样。;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+魔女:“我脸上也没有写着答案。”;
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
+玛丽安:“我知道。所以这次，我想自己把话说清楚。”;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:魔女微微抬起了下巴，等着她继续。;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

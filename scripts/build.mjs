@@ -23,7 +23,10 @@ if (!fs.existsSync(archive)) {
 const hash = createHash('sha256').update(fs.readFileSync(archive)).digest('hex');
 if (hash !== sha256) throw new Error('WebGAL 下载校验失败。请删除 .cache 中的压缩包后重试。');
 await import('./convert-story.mjs');
-await import('./enhance-scenes.mjs');
+const { enhanceMainScenes } = await import('./enhance-scenes.mjs');
+enhanceMainScenes();
+const { buildSideStories } = await import('./build-side-stories.mjs');
+buildSideStories();
 await import('./make-audio.mjs');
 // Rebuild generated output cleanly, so removed/replaced figures do not survive.
 fs.rmSync('dist',{recursive:true,force:true});

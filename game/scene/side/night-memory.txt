@@ -1,0 +1,20 @@
+; 新增选择回应：night-memory
+jumpLabel:truce -when=pt_truce==1;
+jumpLabel:grandmother -when=pt_notebook==2;
+jumpLabel:question -when=pt_truce==2;
+jumpLabel:notebook -when=pt_notebook==1;
+jumpLabel:finish;
+label:truce;
+callScene:side/night-memory-truce.txt;
+jumpLabel:finish;
+label:grandmother;
+callScene:side/night-memory-grandmother.txt;
+jumpLabel:finish;
+label:question;
+callScene:side/night-memory-question.txt;
+jumpLabel:finish;
+label:notebook;
+callScene:side/night-memory-notebook.txt;
+jumpLabel:finish;
+label:finish;
+return;

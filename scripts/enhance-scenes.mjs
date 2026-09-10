@@ -20,7 +20,7 @@ function baseScale(figure) {
   return profile[figure]?.scale ?? 0.94;
 }
 
-function transformFor(figure, active, neutral=false) {
+export function transformFor(figure, active, neutral=false) {
   const base = baseScale(figure);
   const scale = active ? base * 1.025 : base;
   return {
@@ -60,15 +60,11 @@ function normalizeFigureLine(line, file, figure, expressionChange, active, neutr
   return `changeFigure:${file} -${side} -transform=${transform} ${timing} -next;`;
 }
 
-for (const file of chapterFiles) {
-  const fullPath = path.join(sceneDir, file);
-  if (!fs.existsSync(fullPath)) continue;
-
-  const source = fs.readFileSync(fullPath, 'utf8').split('\n');
+export function enhanceScene(source, initialImages = { left: null, right: null }) {
   const out = [];
-  let left = null;
-  let right = null;
-  const currentImages = { left: null, right: null };
+  let left = figureAssets.get(initialImages.left)?.character ?? null;
+  let right = figureAssets.get(initialImages.right)?.character ?? null;
+  const currentImages = { ...initialImages };
   let previousSpeaker = null;
 
   for (const [index, originalLine] of source.entries()) {
@@ -136,7 +132,16 @@ for (const file of chapterFiles) {
     out.push(line);
   }
 
-  fs.writeFileSync(fullPath, out.join('\n'));
+  return out;
 }
 
-console.log('已应用立绘尺寸统一、内收构图与说话人聚焦演出。');
+export function enhanceMainScenes() {
+  for (const file of chapterFiles) {
+    const fullPath = path.join(sceneDir, file);
+    if (!fs.existsSync(fullPath)) continue;
+    fs.writeFileSync(fullPath, enhanceScene(fs.readFileSync(fullPath, 'utf8').split('\n')).join('\n'));
+  }
+  console.log('已应用立绘尺寸统一、内收构图与说话人聚焦演出。');
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) enhanceMainScenes();

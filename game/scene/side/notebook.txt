@@ -1,0 +1,18 @@
+; 新增可选支线：车斗里的问题
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:去往46号休息站的方向已经定下。玛丽安扶住车斗边缘，却还有一句话没有说出口。;
+choose:问她为什么这么在意笔记:ask|说起奶奶讲故事时的样子:remember|暂时不问，记住回去的方向:quiet;
+label:ask;
+callScene:side/notebook-ask.txt;
+jumpLabel:finish;
+label:remember;
+callScene:side/notebook-remember.txt;
+jumpLabel:finish;
+label:quiet;
+callScene:side/notebook-quiet.txt;
+jumpLabel:finish;
+label:finish;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

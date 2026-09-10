@@ -237,4 +237,5 @@ setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":
 setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
 setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
 魔女:“我们到去46号休息站去，去取回你属于奶奶的东西。”;
+callScene:side/notebook.txt;
 changeScene:02.txt;

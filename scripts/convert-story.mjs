@@ -2,6 +2,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { presentation, figureFile } from './figure-assets.mjs';
+import { paginate, escapeDialogue as escape } from './story-format.mjs';
+import { sideStories, sideEvents, validateSideStories } from './side-story-config.mjs';
+export { paginate } from './story-format.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const manuscript = path.join(root, 'source/original.txt');
@@ -10,6 +13,7 @@ const paragraphs = fs.readFileSync(manuscript, 'utf8').split(/\n\s*\n/).map(p =>
 if (paragraphs.length !== 413 || ![25,106,205,321,381].every((p,i) => paragraphs[p] === `（${i+1}）`)) {
   throw new Error('原稿结构发生变化，请同步调整演出索引，避免错配台词。');
 }
+validateSideStories(paragraphs);
 
 const speakers = new Map();
 function assign(name, indexes) { indexes.forEach(i => speakers.set(i, name)); }
@@ -163,28 +167,6 @@ function transitionPair(lines, currentLayout, desiredPair, expressions, currentI
   return desired;
 }
 
-// Splitting only changes pagination; concatenating segments reproduces each paragraph exactly.
-export function paginate(text, limit = 76) {
-  const out = [];
-  let rest = text;
-  while (rest.length > limit) {
-    let cut = -1;
-    for (let i = limit - 1; i >= Math.floor(limit / 2); i--) {
-      if ('。！？；，、…'.includes(rest[i])) { cut = i + 1; break; }
-    }
-    if (cut < 0) cut = limit;
-    while ('”’」』'.includes(rest[cut] || '\0')) cut++;
-    out.push(rest.slice(0, cut));
-    rest = rest.slice(cut);
-  }
-  if (rest) out.push(rest);
-  return out;
-}
-function escape(text) {
-  // WebGAL uses these ASCII characters as syntax. The source uses fullwidth punctuation.
-  if (/[;|\\\r\n]/.test(text) || / -[A-Za-z]/.test(text)) throw new Error('发现需人工处理的 WebGAL 控制字符：' + text);
-  return text;
-}
 const sets = {
   road: { bg:'road.svg', music:'journey.wav' },
   cafe: { bg:'cafe.svg', music:'memory.wav' },
@@ -209,6 +191,7 @@ const outdir = path.join(root, 'game/scene');
 fs.mkdirSync(outdir, {recursive:true});
 for (const [chapterIndex, chapter] of chapters.entries()) {
   const lines = [`; PureTime·黄 / ${chapter.title}`, `changeFigure:none -left -next;`, `changeFigure:none -right -next;`, `changeFigure:none -next;`, `changeBg:none -next;`, `intro:${chapter.title};`];
+  if (chapterIndex === 0) for (const choice of sideStories.choices) lines.push(`setVar:${choice.variable}=0 -next;`);
   let activeLayout = { left:null, right:null };
   let activeImages = { left:null, right:null };
   let expressions = {};
@@ -261,6 +244,8 @@ for (const [chapterIndex, chapter] of chapters.entries()) {
     for (const segment of segments) lines.push(`${speaker}:${escape(segment)};`);
     report.push({paragraph:i, scene:chapter.file, location, figures:layoutPair(activeLayout),
       expressions:Object.fromEntries(layoutPair(activeLayout).map(character=>[character, expressions[character] ?? 'neutral'])), speaker, segments});
+    const sideEvent = sideEvents.find(event => event.afterParagraph === i);
+    if (sideEvent) lines.push(`callScene:side/${sideEvent.id}.txt;`);
   }
 
   if (chapterIndex < chapters.length - 1) lines.push(`changeScene:${chapters[chapterIndex+1].file};`);

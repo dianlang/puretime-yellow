@@ -107,3 +107,4 @@ assert(read('dist/game/scene/05.txt').trim().endsWith('end;'));
 assert(!fs.existsSync(p('dist/source')),'原始文件不应进入发布目录');
 for(const cue of cues) assert(usedExpressions.has(`${cue.character}/${cue.expression}`),`表情未接入：${cue.expression}`);
 console.log(`检查通过：408 个正文段落完整保留，6 幕连通，${refs} 处素材引用有效，${expressionChanges} 次原位表情切换及说话人聚焦正确。`);
+await import('./check-branches.mjs');

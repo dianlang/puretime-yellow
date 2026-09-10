@@ -16,6 +16,7 @@ changeFigure:witch.png -right -transform={"position":{"x":-137.801,"y":0},"scale
 setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
 setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
 玛丽安:“店员小姐刚刚说她去给您送晚餐了……”;
+callScene:side/supper-memory.txt;
 setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
 setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
 魔女:“我让她先回去了。”;
@@ -50,6 +51,7 @@ changeFigure:witch.png -right -transform={"position":{"x":-137.801,"y":0},"scale
 setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
 setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
 魔女:“不过，只要你做出保证，能把你奶奶的那本笔记拿到手的话，我倒也不介意再多走一点弯路……”;
+callScene:side/night-memory.txt;
 setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
 setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
 玛丽安:“不是这样的！”;

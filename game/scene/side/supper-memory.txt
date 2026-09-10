@@ -1,0 +1,12 @@
+; 新增选择回应：supper-memory
+jumpLabel:help -when=pt_supper==1;
+jumpLabel:confide -when=pt_supper==2;
+jumpLabel:finish;
+label:help;
+callScene:side/supper-memory-help.txt;
+jumpLabel:finish;
+label:confide;
+callScene:side/supper-memory-confide.txt;
+jumpLabel:finish;
+label:finish;
+return;

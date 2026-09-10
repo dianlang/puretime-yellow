@@ -1,0 +1,8 @@
+; 新增可选支线：supper-quiet
+setVar:pt_supper=0 -next;
+setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:玛丽安轻轻回握了一下。店员小姐没有追问，牵着她继续向有灯光的地方走去。;
+setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

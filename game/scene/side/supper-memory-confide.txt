@@ -1,0 +1,8 @@
+; 新增可选支线：supper-memory-confide
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:玛丽安想起去食堂时，店员小姐一直没有松开的手。自己去做，和谁也不告诉，可以是两件事。;
+:她把原本准备转身离开的那只脚收了回来。还有一些话，今晚应该说清楚。;
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=0 -next;
+return;
