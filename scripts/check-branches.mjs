@@ -75,7 +75,7 @@ function walk(selection) {
         const character = figureAssets.get(asset).character, transform = state.transforms[side];
         assert.equal(transform.alpha, 1, `支线立绘透明：${file}`);
         assert.equal(transform.brightness, !active || active === character ? 1 : 0.8, `支线或返回后聚焦错误：${file}`);
-        const scale = Number((presentation.characters[character].scale * (active === character ? 1.025 : 1)).toFixed(4));
+        const scale = Number((presentation.characters[character].scale * presentation.figureScale * (active === character ? 1.025 : 1)).toFixed(4));
         assert.equal(transform.scale.x, scale, `支线角色比例变化：${file}`);
       }
       continue;
@@ -85,7 +85,16 @@ function walk(selection) {
       const event = sideStories.choices.find(choice => choice.id === id);
       assert(event, `未知选项：${file}`);
       const option = event.options[selection[sideStories.choices.indexOf(event)]];
-      assert(line.slice(7, -1).split('|').includes(`${option.label}:${option.id}`), '实际选项与配置不一致');
+      const emitted = line.slice(7, -1).split('|').map(item => {
+        const condition = /^\((pt_[a-z_]+)==(-?\d+)\)->/.exec(item);
+        return { content: condition ? item.slice(condition[0].length) : item,
+          visible: !condition || variables[condition[1]] === Number(condition[2]) };
+      });
+      const visible = emitted.filter(item => item.visible).map(item => item.content);
+      const expected = event.options.filter(item => !item.when || variables[item.when.variable] === item.when.equals)
+        .map(item => `${item.label}:${item.id}`);
+      assert.deepEqual(visible, expected, '实际选项及解锁条件与配置不一致');
+      assert(visible.includes(`${option.label}:${option.id}`), '玩家不应选中未解锁的选项');
       decisions.push(id);
       index = current.labels.get(option.id);
       assert(Number.isInteger(index), '选项跳转目标不存在');
@@ -108,7 +117,7 @@ function walk(selection) {
       stack.push({ file, index, stage: structuredClone(state) });
       file = target; index = 0;
       visitedSideFiles.add(file);
-      if (/^side\/(night|supper)-memory-/.test(file)) callbacks.push(file);
+      if (sideStories.callbacks.some(event => file.startsWith(`side/${event.id}-`))) callbacks.push(file);
       continue;
     }
     if (line === 'return;') {
@@ -158,8 +167,11 @@ function walk(selection) {
   return optionalPages;
 }
 
-let combinations = [[]];
-for (const choice of sideStories.choices) combinations = combinations.flatMap(prefix => choice.options.map((_, index) => [...prefix, index]));
-const pathLengths = combinations.map(walk);
+let combinations = [{ selections: [], variables: {} }];
+for (const choice of sideStories.choices) combinations = combinations.flatMap(prefix => choice.options.flatMap((option, index) =>
+  option.when && prefix.variables[option.when.variable] !== option.when.equals ? [] : [{
+    selections: [...prefix.selections, index], variables: { ...prefix.variables, [choice.variable]: option.value }
+  }]));
+const pathLengths = combinations.map(path => walk(path.selections));
 for (const file of scenes.keys()) if (file.startsWith('side/')) assert(visitedSideFiles.has(file), `存在无法触发的支线：${file}`);
 console.log(`支线检查通过：${combinations.length} 种选择组合均回到主线，共 ${addedPages} 页可选内容，单次增加 ${Math.min(...pathLengths)}–${Math.max(...pathLengths)} 页；后续回应可达，背景和人物状态完整恢复。`);

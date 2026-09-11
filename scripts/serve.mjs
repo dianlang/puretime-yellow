@@ -27,5 +27,5 @@ if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.
   if(!fs.existsSync(path.join(root,'index.html'))) {console.error('请先运行 npm run build。');process.exit(1);}
   const server=createGameServer();
   server.on('error',e=>{console.error(e.code==='EADDRINUSE'?'8080 端口已被占用，请先关闭上一次启动的游戏服务。':e.message);process.exitCode=1;});
-  server.listen(8080,'127.0.0.1',()=>console.log('PureTime·黄：http://127.0.0.1:8080\n保持此窗口打开。修改源码后重新构建，再刷新浏览器。Ctrl+C 停止。'));
+  server.listen(8080,'127.0.0.1',()=>console.log('PureTime·黄：http://127.0.0.1:8080\n演出调整：http://127.0.0.1:8080/tune.html\n保持此窗口打开。修改源码后重新构建，再刷新浏览器。Ctrl+C 停止。'));
 }

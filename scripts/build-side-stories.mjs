@@ -85,7 +85,7 @@ export function buildSideStories() {
       if (event.background) intro.push(`changeBg:${event.background} -next;`);
       for (const text of paginate(event.prompt)) intro.push(`:${escapeDialogue(text)};`);
       const wrapper = [`; 新增可选支线：${event.title}`, ...enhanceScene(intro, entry.images),
-        `choose:${event.options.map(option => `${option.label}:${option.id}`).join('|')};`];
+        `choose:${event.options.map(option => `${option.when ? `(${option.when.variable}==${option.when.equals})->` : ''}${option.label}:${option.id}`).join('|')};`];
       for (const option of event.options) {
         const child = `${event.id}-${option.id}`;
         linearScene(child, option.lines, { images: choiceImages, speaker: '' }, event.cast, { name: event.variable, value: option.value });

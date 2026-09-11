@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { normalizePresentation, presentationVariables } from '../web/presentation-settings.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(root);
@@ -41,10 +42,17 @@ fs.cpSync('game','dist/game',{recursive:true});
 fs.rmSync('dist/game/scene/source-map.json',{force:true});
 fs.cpSync('web','dist',{recursive:true});
 fs.cpSync('licenses','dist/licenses',{recursive:true});
+const presentation = normalizePresentation(JSON.parse(fs.readFileSync('game/presentation.json','utf8')));
+fs.writeFileSync('dist/presentation.css', ':root {\n' + Object.entries(presentationVariables(presentation)).map(([key,value]) => `  ${key}: ${value};`).join('\n') + '\n}\n');
+// Use the same custom textbox CSS and installed fonts in the author preview.
+fs.copyFileSync('game/template/Stage/TextBox/textbox.scss', 'dist/tune-textbox.css');
+const engineCss = fs.readdirSync('dist/assets').filter(name => name.endsWith('.css')).map(name => fs.readFileSync(`dist/assets/${name}`,'utf8')).join('\n');
+const fontFaces = [...engineCss.matchAll(/@font-face\s*\{[^}]+\}/g)].map(match => match[0].replace(/url\(\s*(["']?)\.\//g, 'url($1./assets/')).join('\n');
+fs.writeFileSync('dist/tune-fonts.css', fontFaces);
 let html = fs.readFileSync('dist/index.html','utf8');
 html = html.replace('<title>WebGAL</title>','<title>PureTime · 黄</title>\n<meta name="description" content="一场穿过无尽黄昏的公路旅行。PureTime·黄，网页视觉小说。">');
 html = html.replace(/<link[^>]+(?:icons\/|manifest\.json)[^>]*>/g,'');
-html = html.replace('</head>','<link rel="icon" type="image/svg+xml" href="./puretime.svg">\n<link rel="stylesheet" href="./puretime.css">\n<script defer src="./puretime-ui.js"></script>\n</head>');
+html = html.replace('</head>','<link rel="icon" type="image/svg+xml" href="./puretime.svg">\n<link rel="stylesheet" href="./puretime.css">\n<link rel="stylesheet" href="./presentation.css">\n<script defer src="./puretime-ui.js"></script>\n<script type="module" src="./text-layout.js"></script>\n</head>');
 html = html.replace('PRESS THE SCREEN TO START','点击屏幕 · 启程');
 html = html.replace(/minimum-scale=1, maximum-scale=1, user-scalable=no,?\s*/g,'');
 html = html.replace("const live2d2Promise = loadIifePlugin('lib/live2d.min.js');",'const live2d2Promise = Promise.resolve(false);');

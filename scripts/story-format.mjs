@@ -1,5 +1,8 @@
+import fs from 'node:fs';
+import { normalizePresentation, pageLimit } from '../web/presentation-settings.js';
+const config = normalizePresentation(JSON.parse(fs.readFileSync(new URL('../game/presentation.json', import.meta.url), 'utf8')));
 // Pagination changes reading pages, never the underlying text.
-export function paginate(text, limit = 76) {
+export function paginate(text, limit = pageLimit(config)) {
   const out = [];
   let rest = text;
   while (rest.length > limit) {

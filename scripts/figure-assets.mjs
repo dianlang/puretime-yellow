@@ -1,9 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { normalizePresentation } from '../web/presentation-settings.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-export const presentation = JSON.parse(fs.readFileSync(path.join(root, 'game/presentation.json'), 'utf8'));
+export const presentation = normalizePresentation(JSON.parse(fs.readFileSync(path.join(root, 'game/presentation.json'), 'utf8')));
 export const figureAssets = new Map();
 
 export function pngSize(file) {

@@ -11,6 +11,7 @@ export function validateSideStories(paragraphs) {
   for (const choice of sideStories.choices) {
     assert(/^pt_[a-z_]+$/.test(choice.variable) && !variables.has(choice.variable), '支线变量无效或重复');
     assert(choice.options.length >= 2 && choice.options.length <= 4, '每处支线需要 2–4 个选项');
+    assert(choice.options.filter(option => !option.when).length >= 2, '每处支线至少保留两个无条件选项');
     const values = choice.options.map(option => option.value);
     assert(values.every(Number.isInteger) && new Set(values).size === values.length, '选项值须为不同的整数');
     variables.set(choice.variable, values);

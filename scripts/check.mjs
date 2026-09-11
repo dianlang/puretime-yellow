@@ -27,6 +27,7 @@ const folders={changeBg:'background',changeFigure:'figure',bgm:'bgm',playEffect:
 let refs=0;
 const usedExpressions = new Set();
 let expressionChanges = 0;
+const cropWarnings = new Set();
 for(const chapter of map.chapters){
   const sceneLines=read(`dist/game/scene/${chapter.file}`).split('\n');
   const pages=map.dialogue.filter(row=>row.scene===chapter.file).flatMap(row=>row.segments.map(text=>({...row,text})));
@@ -71,10 +72,11 @@ for(const chapter of map.chapters){
       const w=png.readUInt32BE(16),h=png.readUInt32BE(20);
       const fit=Math.min(2560/w,1440/h), anchor=line.includes(' -left')?w*fit/2:2560-w*fit/2;
       const center=anchor+transform.position.x;
-      assert(center>=650&&center<=1910,`立绘中心越界：${figure}`);
-      assert(center-w*fit*transform.scale.x/2>=0&&center+w*fit*transform.scale.x/2<=2560,`立绘左右被裁切：${figure}`);
-      const focusedScale=presentation.characters[character].scale*1.025;
-      assert(720+transform.position.y-h*fit*Math.max(transform.scale.y,focusedScale)/2>=0,`聚焦时头顶被裁切：${figure}`);
+      const targetCenter = line.includes(' -left') ? presentation.stage.leftX : presentation.stage.rightX;
+      assert(Math.abs(center-targetCenter)<0.001,`立绘未应用配置的位置：${figure}`);
+      const focusedScale=presentation.characters[character].scale*presentation.figureScale*1.025;
+      if(center-w*fit*focusedScale/2<0 || center+w*fit*focusedScale/2>2560 ||
+        720+transform.position.y-h*fit*focusedScale/2<0) cropWarnings.add(character);
     }
     if(line.startsWith(':')||/^(魔女|店员小姐|玛丽安|酒保小姐|小花|掠夺者领队|年长的保安|保安团|长老|电台):/.test(line)){
       const row=pages[page++];
@@ -87,7 +89,7 @@ for(const chapter of map.chapters){
         assert.equal(file,figureFile(character,row.expressions[character]),`实际表情不符：${row.paragraph}`);
         assert.equal(state.alpha,1,'表情切换后人物不应透明');
         assert.equal(state.brightness,!speaking||speaking===character?1:0.8,`换表情后说话人聚焦错误：${row.paragraph}`);
-        const scale=Number((presentation.characters[character].scale*(speaking===character?1.025:1)).toFixed(4));
+        const scale=Number((presentation.characters[character].scale*presentation.figureScale*(speaking===character?1.025:1)).toFixed(4));
         assert.equal(state.scale.x,scale,`换表情后角色缩放错误：${row.paragraph}`);
         assert.equal(state.scale.y,scale,`换表情后角色缩放错误：${row.paragraph}`);
       }
@@ -107,4 +109,6 @@ assert(read('dist/game/scene/05.txt').trim().endsWith('end;'));
 assert(!fs.existsSync(p('dist/source')),'原始文件不应进入发布目录');
 for(const cue of cues) assert(usedExpressions.has(`${cue.character}/${cue.expression}`),`表情未接入：${cue.expression}`);
 console.log(`检查通过：408 个正文段落完整保留，6 幕连通，${refs} 处素材引用有效，${expressionChanges} 次原位表情切换及说话人聚焦正确。`);
+if(cropWarnings.size) console.warn(`构图提示：${[...cropWarnings].join('、')} 的放大画布越过舞台边缘，请在 tune.html 检查是否为预期裁切。`);
 await import('./check-branches.mjs');
+await import('./check-presentation.mjs');

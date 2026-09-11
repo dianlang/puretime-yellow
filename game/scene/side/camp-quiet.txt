@@ -1,0 +1,8 @@
+; 新增可选支线：camp-quiet
+setVar:pt_camp=0 -next;
+setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:玛丽安在石壁旁坐下来，看着店员小姐把食材一样样摆好。她没有开口，店员小姐也没有把留给她的位置收回去。;
+setTransform:{"scale":{"x":0.92,"y":0.92},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

@@ -1,0 +1,8 @@
+; 新增可选支线：horizon-memory-road
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:在公路旁等待过的声音，如今正稳稳地响在身边。玛丽安低头看了一眼不断振动的车身，再把目光移回两位同行者。;
+:她已经可以坐在这里问问题了。即使得到的答案，比风声还要难懂。;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

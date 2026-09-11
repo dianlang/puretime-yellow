@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>演出调整 · PureTime·黄</title>
+  <link rel="icon" href="./puretime.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./tune.css">
+  <link rel="stylesheet" href="./tune-textbox.css">
+  <link rel="stylesheet" href="./tune-fonts.css">
+  <script type="module" src="./tune.js"></script>
+</head>
+<body>
+  <header>
+    <div><a href="./" class="wordmark">PureTime · 黄</a><h1>演出调整</h1></div>
+    <div class="actions"><button id="reset" disabled>恢复载入值</button><label class="file-button">导入配置<input id="import" type="file" accept=".json,application/json" disabled></label><button id="export" class="primary" disabled>导出配置</button></div>
+  </header>
+  <main>
+    <section class="preview" aria-label="演出预览">
+      <div id="preview-frame">
+        <div id="preview-stage">
+          <img id="background" src="./game/background/road.svg" alt="公路背景">
+          <img id="figure-left" class="figure" alt="左侧角色" hidden>
+          <img id="figure-right" class="figure" alt="右侧角色" hidden>
+          <div class="TextBox_main TextBox_Background"></div>
+          <div class="TextBox_main" id="preview-textbox">
+            <div class="TextBox_showName" id="preview-name">魔女</div>
+            <div class="text" id="preview-text"><div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="preview-options">
+        <label>玩家字号<select id="player-size"><option value="small">小</option><option value="medium" selected>中</option><option value="large">大</option></select></label>
+        <label>字体<select id="font"><option value="思源宋体">思源宋体</option><option value="WebgalUI">黑体（引擎字体）</option><option value="资源圆体">资源圆体</option></select></label>
+        <label>背景<select id="scene"><option value="road">公路</option><option value="store">便利店</option><option value="cafe">咖啡馆</option><option value="station">休息站</option><option value="room">地下室</option><option value="stars">星空</option></select></label>
+        <label>说话人<select id="speaker"><option value="right">右侧角色</option><option value="left">左侧角色</option><option value="none">旁白</option></select></label>
+      </div>
+      <label class="sample-label" for="sample">预览台词（仅用于检查排版）</label>
+      <textarea id="sample" rows="3">那你记住的，倒不全是纸上的东西。坐稳，别在找到那本笔记之前先掉下车。风从车斗边缘掠过，玛丽安抓紧了扶手，再一次望向公路的尽头。</textarea>
+      <p id="layout-info" class="muted"></p>
+      <p id="warning" role="status"></p>
+      <p id="status" aria-live="polite">正在载入配置……</p>
+      <details><summary>怎样把调整用到游戏里？</summary><p>导出后，将下载的 <code>presentation.json</code> 替换项目的 <code>game/presentation.json</code>，运行 <code>npm run build</code> 并刷新游戏。预览中的字体、说话人和台词不会写入配置；字号设置仍由玩家自己选择。</p><p>预览使用游戏立绘、字体及对话框样式，展示静态构图。表情动画和实际演出请在游戏中确认。离开前请导出，未导出的调整不会保存。</p></details>
+    </section>
+    <aside aria-label="调整参数">
+      <fieldset id="global-controls" disabled><legend>整体构图</legend></fieldset>
+      <fieldset id="character-controls" disabled><legend>角色微调</legend><div class="pair-select"><label>左侧<select id="left-character"></select></label><label>右侧<select id="right-character"></select></label></div><label>编辑角色<select id="edit-character"></select></label><label>预览表情<select id="expression"></select></label><div id="character-sliders"></div></fieldset>
+      <fieldset id="text-controls" disabled><legend>文字与对话框</legend></fieldset>
+    </aside>
+  </main>
+</body>
+</html>

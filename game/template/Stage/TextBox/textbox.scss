@@ -1,7 +1,7 @@
-.TextBox_main { z-index:3;position:absolute;min-height:335px;max-height:335px;bottom:0;left:0;right:0;padding:82px 150px 58px;box-sizing:border-box;display:flex;flex-flow:column;align-items:flex-start;color:#f2e9d8;font-weight:400;letter-spacing:.035em; }
+.TextBox_main { z-index:3;position:absolute;height:var(--pt-current-box-height,var(--pt-box-height,335px));min-height:var(--pt-box-height,335px);max-height:none;bottom:0;left:0;right:0;padding:var(--pt-padding-top,82px) var(--pt-padding-x,150px) var(--pt-padding-bottom,58px);box-sizing:border-box;display:flex;flex-flow:column;align-items:flex-start;color:#f2e9d8;font-weight:400;font-size:calc(100% * var(--pt-font-scale,1));letter-spacing:var(--pt-letter-spacing,.035em); }
 .TextBox_main_miniavatarOff {left:0;}
 .TextBox_Background { z-index:2;background:linear-gradient(180deg,rgba(17,24,29,.82),rgba(12,18,23,.965));border-top:2px solid rgba(218,179,105,.62); }
-.TextBox_showName { position:absolute;left:150px;top:18px;height:52px;line-height:52px;min-width:220px;padding:0 30px 0 0;font-size:80%;z-index:3; }
+.TextBox_showName { position:absolute;left:var(--pt-padding-x,150px);top:12px;height:var(--pt-name-size,48px);line-height:1.1;min-width:220px;padding:0 30px 0 0;font-size:var(--pt-name-size,48px) !important;z-index:3; }
 .TextBox_ShowName_Background {z-index:2;background:transparent;border:0;}
 .TextBox_textElement_start {position:relative;animation:TextDelayShow 420ms ease-out forwards;opacity:0;}
 .TextBox_textElement_Settled {position:relative;opacity:1;}
@@ -10,7 +10,7 @@
 .zhanwei {color:transparent;white-space:nowrap;}
 .outerName {position:absolute;left:0;top:0;color:#e5bb75;z-index:2;white-space:nowrap;}
 .innerName {display:none;}
-.text {overflow:hidden;}
+.text {align-self:stretch;flex:1 1 auto;min-height:0;overflow-x:hidden !important;overflow-y:auto !important;line-height:var(--pt-line-height,1.55) !important;letter-spacing:var(--pt-letter-spacing,.035em);overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b99963 transparent;}
 .readTextOuter {color:#d6d2c9;}
 .miniAvatarContainer {display:none;}
 .miniAvatarImg {max-width:100%;max-height:100%;}

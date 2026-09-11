@@ -1,0 +1,8 @@
+; 新增可选支线：horizon-memory-sea
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:远离陆地。玛丽安把这几个字在心里复述了一遍，仿佛又看见照片上那道海天相接的线。;
+:她想问的东西忽然多了起来，却只能先挑出其中最容易开口的一句。;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=0 -next;
+return;

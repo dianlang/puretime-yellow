@@ -1,0 +1,12 @@
+; 新增选择回应：horizon-memory
+jumpLabel:sea -when=pt_horizon==1;
+jumpLabel:road -when=pt_horizon==2;
+jumpLabel:finish;
+label:sea;
+callScene:side/horizon-memory-sea.txt;
+jumpLabel:finish;
+label:road;
+callScene:side/horizon-memory-road.txt;
+jumpLabel:finish;
+label:finish;
+return;

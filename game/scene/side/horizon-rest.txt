@@ -1,0 +1,4 @@
+; 新增可选支线：horizon-rest
+setVar:pt_horizon=0 -next;
+:玛丽安放松了紧绷的眼睑。照片的轮廓留在黑暗中，她不再追着它看。;
+return;

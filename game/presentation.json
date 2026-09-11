@@ -1,4 +1,9 @@
 {
+  "figureScale": 1,
+  "text": {
+    "fontScale": 1, "nameSize": 48, "lineHeight": 1.55, "letterSpacing": 0.035,
+    "boxHeight": 335, "paddingX": 150, "paddingTop": 82, "paddingBottom": 58
+  },
   "stage": { "width": 2560, "height": 1440, "leftX": 700, "rightX": 1860 },
   "characters": {
     "witch": {

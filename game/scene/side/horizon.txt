@@ -1,0 +1,14 @@
+; 新增可选支线：尚未抵达的海
+:照片里的蓝色在眼前浮起，又被滚烫的风沙冲淡。意识沉下去以前，玛丽安努力留住了一点什么。;
+choose:记住照片里那片海的颜色:sea|听着公路，等一点不一样的声音:road|暂时闭上眼睛，保存力气:rest;
+label:sea;
+callScene:side/horizon-sea.txt;
+jumpLabel:finish;
+label:road;
+callScene:side/horizon-road.txt;
+jumpLabel:finish;
+label:rest;
+callScene:side/horizon-rest.txt;
+jumpLabel:finish;
+label:finish;
+return;

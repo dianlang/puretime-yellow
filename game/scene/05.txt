@@ -28,7 +28,8 @@ setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation
 玛丽安:“魔女大人是有什么心事吗？”;
 setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
 setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
-:受原本唯一对魔女保持尊称的笨蛋兽人影响，玛丽安也不自觉地开始对魔女使用起敬语来，这反倒让一度要求他人对自己使用敬称的魔女都忍不住起了一身鸡皮疙瘩。;
+:受原本唯一对魔女保持尊称的笨蛋兽人影响，玛丽安也不自觉地开始对魔女使用起敬语来，;
+:这反倒让一度要求他人对自己使用敬称的魔女都忍不住起了一身鸡皮疙瘩。;
 setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
 setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
 魔女:“没有……”;

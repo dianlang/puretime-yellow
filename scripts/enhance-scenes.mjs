@@ -17,7 +17,7 @@ const chapterFiles = ['start.txt','01.txt','02.txt','03.txt','04.txt','05.txt'];
 const speakerPattern = /^(魔女|店员小姐|玛丽安|酒保小姐|小花|掠夺者领队|年长的保安|保安团|长老|电台):/;
 
 function baseScale(figure) {
-  return profile[figure]?.scale ?? 0.94;
+  return (profile[figure]?.scale ?? 0.94) * presentation.figureScale;
 }
 
 export function transformFor(figure, active, neutral=false) {

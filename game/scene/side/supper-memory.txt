@@ -1,6 +1,10 @@
 ; 新增选择回应：supper-memory
+jumpLabel:cook -when=pt_supper==3;
 jumpLabel:help -when=pt_supper==1;
 jumpLabel:confide -when=pt_supper==2;
+jumpLabel:finish;
+label:cook;
+callScene:side/supper-memory-cook.txt;
 jumpLabel:finish;
 label:help;
 callScene:side/supper-memory-help.txt;

@@ -1,0 +1,23 @@
+; 新增可选支线：supper-memory-cook
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
+玛丽安:“今天的晚饭，我也帮着照看了一会儿。”;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+魔女:“怪不得。她来送的时候，把过程也一并端过来了。”;
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=180 -next;
+玛丽安:“她都告诉您了？”;
+changeFigure:witch.png -right -duration=0 -enterDuration=0 -exitDuration=0 -next;
+changeFigure:witch_happy.png -right -transform={"position":{"x":-137.801,"y":0},"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=0 -enterDuration=0 -exitDuration=450 -next;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.8405,"y":0.8405},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+魔女:“差一点就从哪块石头挡风讲起了。……你想说的不会也是这个吧？”;
+setTransform:{"scale":{"x":1.1,"y":1.1},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=180 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-right -duration=180 -next;
+:玛丽安摇摇头。手心仿佛还留着勺柄的温度，让接下来那句话不至于那么难以开口。;
+changeFigure:witch_happy.png -right -duration=0 -enterDuration=0 -exitDuration=0 -next;
+changeFigure:witch.png -right -transform={"position":{"x":-137.801,"y":0},"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -duration=0 -enterDuration=0 -exitDuration=450 -next;
+setTransform:{"scale":{"x":1.1275,"y":1.1275},"alpha":1,"brightness":1,"saturation":1,"contrast":1} -target=fig-left -duration=0 -next;
+setTransform:{"scale":{"x":0.82,"y":0.82},"alpha":1,"brightness":0.8,"saturation":0.72,"contrast":0.92} -target=fig-right -duration=0 -next;
+return;
